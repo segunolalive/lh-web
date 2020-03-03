@@ -9,3 +9,16 @@
 .p-20{
     padding: 30px;
 }
+
+.bg-shade {
+    background-color: #F1F5F7 !important;
+}
+
+.map {
+    width: 100%;
+    height: 450px;
+}
+
+.custom-slider {
+    height: 450px;
+}

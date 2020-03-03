@@ -126,7 +126,7 @@ body > nav .icon-links a i, .shop-menu-cnt > i:before, .shop-menu-cnt .cart-tota
 }
 
 body, p, input, textarea, ::placeholder, .tab-box.tab-vertical > .tab-nav li:not(.active):not(:hover) a, body > header .container > h2 {
-    color: rgb(88, 119, 144);
+    color: #000000;
 }
 
 body > nav.light:not(.menu-transparent), nav.light.menu-transparent.scroll-menu, footer {
@@ -144,50 +144,50 @@ body > nav.light:not(.menu-transparent), nav.light.menu-transparent.scroll-menu,
 .tab-icon.tab-vertical > .tab-nav li.active a i, .tab-icon.tab-vertical > .tab-nav li:hover a i, .tab-vertical > .tab-nav li:hover a, .meta-footer, .form-search > div:before, .cnt-box-side .extra-field,
 nav .tab-nav li.active a, nav .tab-nav li:hover a, .menu-inner li:hover > a, .menu-inner li.active > a, a, .mega-menu h5, .search-box-menu > i:hover, .mega-menu .icon-list li a:hover,
 nav.active .menu-btn:before, .text-list-side li div {
-    color: rgb(71, 178, 228);
+    color: #ACDF87;
 }
 
 nav.light a.btn-border, .dropdown > ul li:hover > a, .dropdown > ul li.active > a, .menu-cnt > ul > li:hover > a, .menu-cnt > ul > li.active > a, .light .counter h3, .breadcrumb li:last-child a,
 .breadcrumb li:hover a, .menu-side-collapse .dropdown-submenu > a {
-    color: rgb(71, 178, 228) !important;
+    color: #ACDF87 !important;
 }
 
 .btn-text.btn-video:before, .icon-circle li:before, .icon-circle span:before, .icon-line li:before, .icon-line span:before, .progress-bar > div > div, .progress-bar > div span, .breadcrumb li a:after,
 .menu-inner li:before, .counter-big.counter-icon .value span:last-child:before, .cnt-box-team .caption h2:before, .mega-menu .tab-nav a:after, .shop-menu-cnt .cart-count {
-    background-color: rgb(71, 178, 228);
+    background-color: #ACDF87;
 }
 
 .btn, .tab-nav li.active a, .tab-nav li:hover a, .tab-nav.align-center li.active a, .tab-nav.align-center li:hover a, .icon-links-grid a:hover, .icon-links-button a, nav.light a.btn-border:hover,
 .btn-border:hover, .menu-transparent .btn:not(.btn-border) {
-    background-color: rgb(71, 178, 228);
-    border-color: rgb(71, 178, 228);
+    background-color: #ACDF87;
+    border-color: #ACDF87;
 }
 
 .light .btn-border {
-    color: rgb(71, 178, 228) !important;
-    border-color: rgb(71, 178, 228) !important;
+    color: #ACDF87 !important;
+    border-color: #ACDF87 !important;
 }
 
 .tab-nav li a, .form-search:hover {
-    border-color: rgb(71, 178, 228);
+    border-color: #ACDF87;
 }
 
 .pricing-table-big {
-    border-top-color: rgb(71, 178, 228);
+    border-top-color: #ACDF87;
 }
 
 .icon-links a:hover i, .icon-links-popup:hover > i, .breadcrumb li:not(:last-child):hover a, .search-bar input[type=submit]:hover, .btn-text:hover, .menu-inner .dropdown ul > li:hover > a,
 .album-title > a:hover, .glide__arrow:hover, .list-nav a:hover,
 .form-search > div:hover:before {
-    color: rgb(58, 149, 191);
+    color: #4c9a2a;
 }
 
 .btn:not(.btn-border):hover, .icon-links-button a:hover {
-    background-color: rgb(58, 149, 191);
+    background-color: #4c9a2a;
 }
 
 .btn:not(.btn-border):hover, .input-text:focus, .input-select:focus, .input-textarea:focus, .search-bar input[type=text]:focus {
-    border-color: rgb(58, 149, 191);
+    border-color: #4c9a2a;
 }
 
 .light p, .btn-border:hover, .media-box-full .caption .extra-field, .media-box-reveal p, .light .accordion-list > li > a, .media-box p {
@@ -1448,7 +1448,7 @@ body > header .breadcrumb {
 }
 
 .media-box-down .caption p {
-    color: rgb(88, 119, 144) !important;
+    color: #1e5631 !important;
 }
 
 .media-box-down .caption h2 {

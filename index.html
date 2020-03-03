@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Project Lighthouse</title>
-    <meta name="description" content="">
+    <meta name="description" content="Official website of the Project Lighthouse Nigeria">
     <script src="themekit/scripts/jquery.min.js"></script>
     <script src="themekit/scripts/main.js"></script>
     <link rel="stylesheet" href="themekit/css/bootstrap-grid.css">
@@ -28,7 +28,7 @@
         data-scroll-detect="true">
         <div class="container">
             <div class="menu-brand">
-                <a href="#">
+                <a href="/">
                     <img class="logo-default" src="media/logos/lighthouse-logo.png" alt="logo" />
                     <img class="logo-retina" src="media/logos/lighthouse-logo.png" alt="logo" />
                 </a>
@@ -50,6 +50,17 @@
                             </li>
                             <li>
                                 <a href="documents.html">Documents &amp; Reports</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Profile</a>
+                        <ul>
+                            <li>
+                                <a href="https://lighthouse.postprincipal.com:7003/" target="blank">Signin</a>
+                            </li>
+                            <li>
+                                <a href="/signup.html">Signup</a>
                             </li>
                         </ul>
                     </li>
@@ -75,11 +86,46 @@
                             Project Lighthouse
                         </h1>
                         <h3>
-                            Connecting the dots ....
+                            Connecting the dots....
                         </h3>
+                        <hr class="space">
+                        <a href="/signup.html" target="_blank" class="btn btn-circle btn-sm">Get Started</a>
                         <hr class="space-lg">
                     </div>
                 </div>
+
+                <!-- <ul id="preview-slider" class="slider" data-options="arrows:true,nav:true">
+                    <li>
+                        <a class="img-box" href="#">
+                            <img src="https://themekit.dev/shared/thumbs/hd.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="img-box" href="#">
+                            <img src="https://themekit.dev/shared/thumbs/hd.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="img-box" href="#">
+                            <img src="https://themekit.dev/shared/thumbs/hd.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="img-box" href="#">
+                            <img src="https://themekit.dev/shared/thumbs/hd.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="img-box" href="#">
+                            <img src="https://themekit.dev/shared/thumbs/hd.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="img-box" href="#">
+                            <img src="https://themekit.dev/shared/thumbs/hd.png" alt="">
+                        </a>
+                    </li>
+                </ul> -->
             </div>
         </section>
         <section id="features" class="section-base section-color">
@@ -193,36 +239,8 @@
                         </p>
                         <hr class="space-sm visible-md" />
                     </div>
-                    <div class="col-lg-6">
-                        <div class="grid-list" data-columns="2" data-columns-lg="1" data-columns-md="2"
-                            data-columns-sm="1">
-                            <div class="grid-box">
-                                <div class="grid-item">
-                                    <a href="#" class="media-box">
-                                        <img src="media/images/lighthouse-1.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="grid-item">
-                                    <a href="#" class="media-box">
-                                        <img src="media/images/lighthouse-2.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="grid-item">
-                                    <a href="#" class="media-box">
-                                        <img src="media/images/lighthouse-3.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="grid-item">
-                                    <a href="#" class="media-box">
-                                        <img src="media/images/lighthouse-4.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="list-pagination">
-                                <ul class="pagination" data-page-items-lg="1" data-page-items="2"
-                                    data-pagination-anima="fade-left"></ul>
-                            </div>
-                        </div>
+                    <div class="col-lg-6" data-anima="fade-right" data-time="1000">
+                        <img class="margin-11" src="media/lighthouse-bg.png" alt="" />
                     </div>
                 </div>
                 <br>
@@ -311,43 +329,8 @@
                     </div>
                 </div>
             </div>
-
         </section>
 
-        <section class="section-image light" data-parallax="scroll" data-image-src="media/lighthouse-background-02.jpg">
-            <div class="container">
-                <hr class="space-lg" />
-            </div>
-        </section>
-        <section class="section-base section-color section-top-overflow">
-            <div class="container">
-                <form action="themekit/scripts/contact-form/contact-form.php"
-                    class="form-box form-ajax form-inline boxed-area light" method="post"
-                    data-email="example@domain.com">
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <input id="name" name="name" placeholder="Name" type="text" class="input-text" required>
-                        </div>
-                        <div class="col-lg-4">
-                            <input id="email" name="email" placeholder="Email" type="email" class="input-text" required>
-                        </div>
-                        <div class="col-lg-4">
-                            <button class="btn btn-sm" type="submit">Subscribe</button>
-                        </div>
-                    </div>
-                    <div class="form-checkbox">
-                        <input type="checkbox" id="check" name="check" value="check" required>
-                        <label for="check">You accept the terms of service and the privacy policy</label>
-                    </div>
-                    <div class="success-box">
-                        <div class="alert alert-success">Congratulations. Your message has been sent successfully</div>
-                    </div>
-                    <div class="error-box">
-                        <div class="alert alert-warning">Error, please retry. Your message has not been sent</div>
-                    </div>
-                </form>
-            </div>
-        </section>
 
         <section class="section-base">
             <div class="container">
@@ -417,8 +400,42 @@
             </div>
         </section>
 
-
-
+        <section class="section-base align-center bg-shade">
+            <div class="container">
+                <h2>Subscribe now.</h2>
+                <div class="width-650">
+                    <p>Stay updated with the latest reports on project lighthouse</p>
+                    <hr class="space-sm" />
+                    <form action="themekit/scripts/contact-form/contact-form.php"
+                        class="form-box form-ajax form-inline align-center" method="post"
+                        data-email="example@domain.com">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <input id="name" name="name" placeholder="Name" type="text" class="input-text" required>
+                            </div>
+                            <div class="col-lg-4">
+                                <input id="email" name="email" placeholder="Email" type="email" class="input-text"
+                                    required>
+                            </div>
+                            <div class="col-lg-4">
+                                <button class="btn btn-sm" type="submit">Subscribe</button>
+                            </div>
+                        </div>
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="check" name="check" value="check" required>
+                            <label for="check">You accept the terms of service and the privacy policy</label>
+                        </div>
+                        <div class="success-box">
+                            <div class="alert alert-success">Congratulations. Your message has been sent successfully
+                            </div>
+                        </div>
+                        <div class="error-box">
+                            <div class="alert alert-warning">Error, please retry. Your message has not been sent</div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
     <i class="scroll-top-btn scroll-top show"></i>
     <footer class="footer-parallax light">
@@ -429,13 +446,13 @@
                     <div class="menu-inner menu-inner-vertical">
                         <ul>
                             <li>
-                                <a href="#">Home</a>
+                                <a href="/">Home</a>
                             </li>
                             <li>
-                                <a href="#">About</a>
+                                <a href="about.html">About</a>
                             </li>
                             <li>
-                                <a href="#">News Update</a>
+                                <a href="news.html">News Update</a>
                             </li>
                             <li>
                                 <a href="#">Documents And Reports</a>
@@ -448,13 +465,13 @@
                     <div class="menu-inner menu-inner-vertical">
                         <ul>
                             <li>
-                                <a href="#">Contact</a>
+                                <a href="contact.html">Contact</a>
                             </li>
                             <li>
-                                <a href="#">Help Centre</a>
+                                <a href="contact.html">Help Centre</a>
                             </li>
                             <li>
-                                <a href="#">Feedback</a>
+                                <a href="contact.html">Feedback</a>
                             </li>
                         </ul>
                     </div>
@@ -464,10 +481,7 @@
                     <div class="menu-inner menu-inner-vertical">
                         <ul>
                             <li>
-                                <a href="#">FAQ</a>
-                            </li>
-                            <li>
-                                <a href="#">Partners</a>
+                                <a href="faq.html">FAQ</a>
                             </li>
                             <li>
                                 <a href="#">Privacy and Terms</a>
