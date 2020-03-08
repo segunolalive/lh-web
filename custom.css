@@ -47,3 +47,14 @@ footer.footer-parallax.light {
 footer.footer-parallax.light a {
   color: #ddfdfd;
 }
+
+footer.footer-parallax.light a,
+footer.footer-parallax.light a:hover,
+footer.footer-parallax.light a:focus,
+footer.footer-parallax.light a:active {
+  color: #ffffff;
+}
+
+footer.footer-parallax.light li::before {
+  background-color: white;
+}
