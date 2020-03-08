@@ -14,6 +14,19 @@
     background-color: #F1F5F7 !important;
 }
 
+.bg-ash {
+    background-color: #ccc;
+    padding: 10px 15px;
+}
+
+.bg-green {
+    background-color: #1e5631;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
 .map {
     width: 100%;
     height: 450px;
@@ -21,4 +34,12 @@
 
 .custom-slider {
     height: 450px;
+}
+
+footer.footer-parallax.light {
+    background-color: #ccc;
+}
+
+.mb-60{
+    margin-bottom: 60px;
 }

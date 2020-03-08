@@ -181,7 +181,7 @@ form.form-box textarea {
 
 .datepicker-top-left,
 .datepicker-top-right {
-    border-top-color: #ACDF87;
+    border-top-color: #4c9a2a;
 }
 
 .datepicker-top-left:before,
@@ -195,7 +195,7 @@ form.form-box textarea {
 
 .datepicker-top-left:before,
 .datepicker-top-right:before {
-    border-bottom-color: #ACDF87;
+    border-bottom-color: #4c9a2a;
 }
 
 .datepicker-top-left:after,
@@ -206,7 +206,7 @@ form.form-box textarea {
 
 .datepicker-bottom-left,
 .datepicker-bottom-right {
-    border-bottom-color: #ACDF87;
+    border-bottom-color: #4c9a2a;
 }
 
 .datepicker-bottom-left:before,
@@ -220,7 +220,7 @@ form.form-box textarea {
 
 .datepicker-bottom-left:before,
 .datepicker-bottom-right:before {
-    border-top-color: #ACDF87;
+    border-top-color: #4c9a2a;
 }
 
 .datepicker-bottom-left:after,
@@ -276,7 +276,7 @@ form.form-box textarea {
 
 .datepicker-panel > ul > li.picked,
 .datepicker-panel > ul > li.picked:hover {
-    color: #ACDF87;
+    color: #4c9a2a;
 }
 
 .datepicker-panel > ul > li.disabled,
