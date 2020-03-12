@@ -19,7 +19,7 @@ Table of contents
  - Animations
  - Responsive classes
 
-------------------------------------------------------------------- 
+-------------------------------------------------------------------
 
 # GLOBAL
 ===================================================================
@@ -198,7 +198,7 @@ body.boxed-layout nav, body.boxed-layout header, body.boxed-layout main, body.bo
     margin-right: auto;
 }
 
-/* 
+/*
 
 # COLORS
 ===================================================================
@@ -332,7 +332,7 @@ nav.light .menu-cnt > ul > li > a, .light .menu-btn:before {
     opacity: .7;
 }
 
-/* 
+/*
 
 # ICONS
 ===================================================================
@@ -417,7 +417,7 @@ main > section.section-base {
 }
 
 main > section > .container {
-    
+
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -1311,11 +1311,10 @@ nav.menu-classic.menu-fixed.menu-transparent.menu-one-page.align-right.light.scr
     box-shadow: 0px 1px 10px #999;
 }
 
-/* body > nav.menu-transparent, .menu-transparent .form-control, .menu-transparent .btn, .menu-transparent .menu-cnt > ul > li:hover > a, .menu-transparent .lan-menu > li > a, .menu-transparent .btn:hover,
+body > nav.menu-transparent, .menu-transparent .form-control, .menu-transparent .btn, .menu-transparent .menu-cnt > ul > li:hover > a, .menu-transparent .lan-menu > li > a, .menu-transparent .btn:hover,
 .menu-big-box.menu-transparent .menu-box, .menu-transparent .menu-mini, .menu-transparent .lan-menu > li:hover > a {
     background: none;
-    box-shadow: 0px 2px 10px #999;
-} */
+}
 
 /*
 -------------------------------------------------------------------
@@ -2086,7 +2085,7 @@ BASE - HEADER
 
 # TYPOGRAPHY
 ===================================================================
- 
+
 -------------------------------------------------------------------
 SPACE
 -------------------------------------------------------------------
@@ -2237,7 +2236,7 @@ QUOTE
 
 # COMPONENTS
 ===================================================================
- 
+
 -------------------------------------------------------------------
 BUTTONS - COMPONENT
 -------------------------------------------------------------------
@@ -3677,9 +3676,9 @@ img {
     width: auto !important;
 }
 
-/* 
+/*
 
-# CONTAINERS 
+# CONTAINERS
 ===================================================================
 
 -------------------------------------------------------------------

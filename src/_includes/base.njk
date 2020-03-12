@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="/themekit/css/media-box.css">
     <link rel="stylesheet" href="/static/styles/skin.css">
     <link rel="stylesheet" href="/static/styles/custom.css">
-    <link rel="icon" href="media/favicon.png">
+    <link rel="icon" href="/media/favicon.png">
   </head>
 
   <body>
@@ -26,9 +26,11 @@
 
     {% include "./partials/nav.njk" %}
 
-    <main id="main-content" tabindex="-1" class="footer-parallax-cnt" style="margin-bottom: 442px; background: white">
+    {% block header %}{% endblock %}
 
-    {{ content | safe }}
+    <main id="main-content" tabindex="-1" class="footer-parallax-cnt">
+
+    {% block content %}{% endblock %}
 
     </main>
     {% include "./partials/footer.njk" %}

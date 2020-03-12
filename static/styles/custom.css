@@ -14,9 +14,10 @@
   background-color: #f1f5f7 !important;
 }
 
-.bg-ash {
-  background-color: #ccc;
-  padding: 10px 15px;
+.support-box {
+  background-color: #eff5ef;
+    padding: 10px 15px;
+    border-radius: 4px;
 }
 
 .bg-green {

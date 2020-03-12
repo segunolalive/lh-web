@@ -1,0 +1,87 @@
+﻿{% extends "base.njk" %}
+
+{% block content %}
+  <section class="section-base section-full-width no-padding">
+    <hr class="space"/>
+    <div class="container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.5167083620113!2d7.479745414787207!3d9.10771349346627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0a7e080acc1d%3A0x5736270f2bd5e20d!2s14%20Vistula%20CL.%2C%20Maitama%2C%20Abuja!5e0!3m2!1sen!2sng!4v1583046609011!5m2!1sen!2sng" class="map" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </div>
+  </section>
+  <section class="section-base section-color">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7">
+          <h2>Contact us now.</h2>
+          <hr class="space-sm"/>
+          <form action="themekit/scripts/contact-form/contact-form.php" class="form-box form-ajax" method="post" data-email="info@projectlighthouse.gov.ng">
+            <div class="row">
+              <div class="col-lg-6">
+                <input id="name" name="name" placeholder="Name" type="text" class="input-text" required="required">
+              </div>
+              <div class="col-lg-6">
+                <input id="email" name="email" placeholder="Email" type="email" class="input-text" required="required">
+              </div>
+            </div>
+            <textarea id="messagge" name="messagge" class="input-textarea" placeholder="Write something ..." required="required"></textarea>
+            <div class="form-checkbox">
+              <input type="checkbox" id="check" name="check" value="check" required="required">
+              <label for="check">You accept the terms of service and the privacy policy</label>
+            </div>
+            <button class="btn btn-sm btn-circle" type="submit">Send messagge</button>
+            <div class="success-box">
+              <div class="alert alert-success">Congratulations. Your message has been sent successfully</div>
+            </div>
+            <div class="error-box">
+              <div class="alert alert-warning">Error, please retry. Your message has not been sent
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-lg-5">
+          <hr class="space visible-md"/>
+          <hr class="space">
+          <p>
+            Our team of seasoned professionals want to assist you.
+          </p>
+          <ul class="text-list text-list-line">
+            <li>
+              <b>Address</b>
+              <hr/>
+              <p>14 Vistula Close, off Panama crescent, Maitama, Abuja.</p>
+            </li>
+            <li>
+              <b>Web</b>
+              <hr/>
+              <p>https://www.projectlighthouse.gov.ng</p>
+            </li>
+            <li>
+              <b>Email</b>
+              <hr/>
+              <p>info@projectlighthouse.gov.ng</p>
+            </li>
+            <li>
+              <b>Phone</b>
+              <hr/>
+              <p>080CALLLH</p>
+            </li>
+          </ul>
+          <hr class="space-sm"/>
+          <div class="icon-links icon-social icon-links-grid social-colors">
+            <a href="https://www.facebook.com/lighthouse_gov" target="blank" class="facebook">
+              <i class="icon-facebook"></i>
+            </a>
+            <a href="https://www.twitter.com/lighthouse_gov" target="blank" class="twitter">
+              <i class="icon-twitter"></i>
+            </a>
+            <a href="https://www.linkedin.com/lighthouse_gov" target="blank" class="linkedin">
+              <i class="icon-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/lighthouse_gov" target="blank" class="instagram">
+              <i class="icon-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}
