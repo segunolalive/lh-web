@@ -1,29 +1,29 @@
 /*
 *
 * =================================================================
-* SKIN 
+* SKIN
 * =================================================================
 *
-* Populate this file with the CSS of your custom design. 
+* Populate this file with the CSS of your custom design.
 * Include this file into the <head> area of your pages, after the style.css and any other css file.
 *
 */
 
 @font-face {
     font-family: 'Jost';
-    src: url('media/fonts/Jost-Book.woff2') format('woff2'), url('media/fonts/Jost-Book.woff') format('woff');
+    src: url('/media/fonts/Jost-Book.woff2') format('woff2'), url('/media/fonts/Jost-Book.woff') format('woff');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Jost';
-    src: url('media/fonts/Jost-Medium.woff2') format('woff2'), url('media/fonts/Jost-Medium.woff') format('woff');
+    src: url('/media/fonts/Jost-Medium.woff2') format('woff2'), url('/media/fonts/Jost-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
 }
 
-/* 
+/*
 
 # ANIMATIONS E GLOBAL
 ===================================================================
@@ -92,7 +92,7 @@
     border-radius: 3px;
 }
 
-/* 
+/*
 
 # COLORS
 ===================================================================
@@ -237,7 +237,7 @@ nav.light .menu-cnt a.btn:not(.btn-border) {
 
 /*
 
-# CUSTOM 
+# CUSTOM
 ===================================================================
 
 */
@@ -279,7 +279,7 @@ nav.light .menu-cnt a.btn:not(.btn-border) {
 .themekit-envato .stars:before {
     content: '';
     position: absolute;
-    background: url(media/star.svg) repeat-x;
+    background: url(../../media/star.svg) repeat-x;
     background-size: 25px 25px;
     background-position: left center;
     width: 125px;
@@ -436,7 +436,7 @@ p + .box-sign {
 
 .section-ovarlay-image:before {
     content: '';
-    background-image: url(media/saas/overlay-1.svg);
+    background-image: url(../../media/saas/overlay-1.svg);
     background-size: contain;
     background-position: center bottom;
     background-repeat: no-repeat;
@@ -460,7 +460,7 @@ p + .box-sign {
 
 i.icon-check, i.icon-check-gray, .cnt-pricing-table > ul > li:before {
     content: '';
-    background-image: url(media/check.svg);
+    background-image: url(../../media/check.svg);
     background-size: contain;
     background-repeat: no-repeat;
     width: 20px;
@@ -471,7 +471,7 @@ i.icon-check, i.icon-check-gray, .cnt-pricing-table > ul > li:before {
 
 i.icon-photo:before, .icon-photo i:before {
     content: '';
-    background-image: url(media/photo-icon.png);
+    background-image: url(../../media/photo-icon.png);
     background-size: contain;
     background-repeat: no-repeat;
     width: 30px;
@@ -481,7 +481,7 @@ i.icon-photo:before, .icon-photo i:before {
 }
 
 i.icon-check-gray {
-    background-image: url(media/check-gray.svg);
+    background-image: url(../../media/check-gray.svg);
 }
 
 .table-price tbody td, .table-price thead th {
@@ -1964,7 +1964,7 @@ body > header .breadcrumb {
 
 .media-box-full .caption:after {
     content: '';
-    background-image: url(media/play.svg);
+    background-image: url(../../media/play.svg);
     background-size: contain;
     position: absolute;
     width: 30px;
@@ -2034,7 +2034,7 @@ body > header .breadcrumb {
 .cnt-box-testimonials[class*=rating-] > p:not(.testimonial-info):before, .cnt-box-testimonials-bubble[class*=rating-] > .thumb-bar span:first-child:before {
     content: '';
     position: absolute;
-    background: url(media/star.svg) repeat-x;
+    background: url(../../media/star.svg) repeat-x;
     background-size: 17px 17px;
     background-position: left center;
     width: 84px;
@@ -2560,7 +2560,7 @@ Small devices (landscape phones, less than 768px)
 */
 
 @media (max-width: 767.98px) {
- 
+
     .table-full-sm td, .table-full-sm th {
         padding: 30px 0 !important;
     }

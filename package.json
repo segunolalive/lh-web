@@ -1,0 +1,20 @@
+{
+  "name": "lighthouse-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eleventy.js",
+  "scripts": {
+    "serve": "eleventy --serve"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^0.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://segunola@bitbucket.org/carterconsultingdev/lighthouse-web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/carterconsultingdev/lighthouse-web#readme"
+}

@@ -459,7 +459,7 @@ function isScrollView(t) {
             }
         });
 
-        //ALBUM 
+        //ALBUM
         $(body).on("click", ".album-box", function () {
             var album = $(this).closest(".album");
             var animation = $(album).attr("data-album-anima");
@@ -1059,7 +1059,7 @@ function isScrollView(t) {
                 t.isotope('remove', items[i]);
             }
             t.isotope('layout');
-        }, 1000); 
+        }, 1000);
 
         if (type == 'pagination') {
             var optionsArr;
