@@ -1,0 +1,123 @@
+{% extends "base.njk" %}
+
+{% block content %}
+  <hr class="space">
+  <section class="section-base section-color">
+    <div class="container">
+      <div class="row">
+        <h2>Registration Guideline .</h2>
+        <p>Getting registered as a company, contractor, consultant or service provider with the Federal Government Lighthouse Portal is easy and simple.</p>
+      </div>
+      <div class="row">
+        <div class="panel">
+          <ul class="text-list text-list-side">
+            <li>
+              <h4>1</h4>
+              <p>
+                The Lighthouse Debt Verification Database is an online system thatallows Companies registered with the CAC verify their debt status with the Federal Government.
+              </p>
+            </li>
+            <li>
+              <h4>2</h4>
+              <p>
+                To register your company on the system, you will provide your company (CAC) Registration number, FIRS (TIN), Company address details and company's contact information.
+              </p>
+            </li>
+            <li>
+              <h4>3</h4>
+              <p>
+                On successful completion, your credential (Username and Password) is sent shortly to the unique contact email address provided. Check your email for your credential (Username and Password).
+              </p>
+            </li>
+            <li>
+              <h4>4</h4>
+              <p>
+                Using your credential (Username and Password), login to the website to access information regarding your debt status to the government.
+              </p>
+            </li>
+            <li>
+              <h4>5</h4>
+              <p>
+                Based on verified company data, the company is classified by as debt free or indebted.
+              </p>
+            </li>
+            <li>
+              <h4>6</h4>
+              <p>
+                NB. No payment is required in order to be registered on the system.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container bg-white mb-60">
+      <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+          <h2>Get started .</h2>
+          <hr class="space-sm"/>
+          <form action="#" class="form-box form-ajax" method="post">
+            <div class="row">
+              <div class="col-lg-6">
+                <input id="company_name" name="company_name" placeholder="Company Name" type="text" class="input-text" required="required">
+              </div>
+              <div class="col-lg-6">
+                <input id="email" name="email" placeholder="Email" type="email" class="input-text" required="required">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <input id="rep_name" name="rep_name" placeholder="Representative Name" type="text" class="input-text" required="required">
+              </div>
+              <div class="col-lg-6">
+                <input id="phone" name="phone" placeholder="Phone Number" type="number" class="input-text" required="required">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <input id="nin" name="nin" placeholder="Representative NIN" type="number" class="input-text" required="required">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <input id="tin" name="tin" placeholder="Tin Number" type="number" class="input-text" required="required">
+              </div>
+              <div class="col-lg-6">
+                <input id="rc_number" name="rc_number" placeholder="RC Number" type="number" class="input-text" required="required">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <textarea id="address" name="address" placeholder="Address" type="text" class="input-text" required="required"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <input id="password" name="password" placeholder="Password" type="password" class="input-text" required="required">
+              </div>
+              <div class="col-lg-6">
+                <input id="confirm_password" name="confirm_password" placeholder="Confirm password" type="password" class="input-text" required="required">
+              </div>
+            </div>
+
+            <div class="form-checkbox">
+              <input type="checkbox" id="check" name="check" value="check" required="required">
+              <label for="check">You accept the terms of service and the privacy policy</label>
+            </div>
+            <button class="btn btn-sm btn-circle" type="submit">Sign up</button>
+            <div class="success-box">
+              <div class="alert alert-success">Congratulations. Your message has been sent successfully</div>
+            </div>
+            <div class="error-box">
+              <div class="alert alert-warning">Error, please retry. Your message has not been sent
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-lg-2"></div>
+      </div>
+    </div>
+  </section>
+
+{% endblock %}
