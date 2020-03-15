@@ -5,10 +5,10 @@
     <ul class="accordion-list">
       {% for faq in faqs %}
         <li>
-          <a href="#">{{faq.question}}}</a>
+          <a href="#">{{faq.data.question}}</a>
           <div class="content">
             <p>
-              {{faq.answer}}
+              {{faq.data.answer}}
             </p>
           </div>
         </li>
