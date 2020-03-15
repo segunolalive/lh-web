@@ -1,13 +1,10 @@
 ﻿{% extends "base.njk" %}
 
 {% block header %}
-  <header style="position: relative" class="header-image ken-burn-center light" data-parallax="true" data-natural-height="600" data-natural-width="1920" data-bleed="0" data-image-src="/media/lighthouse-background-04.jpg" data-offset="0">
-      <div class="overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: #17452666;"></div>
-    <div class="container" style="margin-top: 0px;">
-      <h1>About</h1>
-      <h2>"Data is the new oil"</h2>
-    </div>
-  </header>
+  {% set bannerTitle = 'About' %}
+  {% set bannerText = 'Data is the new oil' %}
+  {% set bannerBackground = "/media/lighthouse-background-04.jpg" %}
+  {% include "partials/banner.njk" %}
 {% endblock %}
 
 {% block content %}

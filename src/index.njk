@@ -1,26 +1,14 @@
 ﻿{% extends "base.njk" %}
 
-{% block content %}
-  <section class="section-image light ken-burn-center" data-parallax="scroll" data-image-src="media/lighthouse-background-03.jpg">
-  <div class="container">
-    <hr class="space-lg"/>
-    <div class="overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: #17452666;"></div>
-    <div class="row align-items-center" data-anima="fade-in" data-time="1000">
-      <div class="col-lg-6">
-        <h1>
-          Project Lighthouse
-        </h1>
-        <h3>
-          Connecting the dots....
-        </h3>
-        <hr class="space">
-        <a href="/signup" class="btn btn-circle btn-sm">Get Started</a>
-        <hr class="space-lg">
-      </div>
-    </div>
+{% block header %}
+  {% set bannerTitle = 'Project Lighthouse' %}
+  {% set bannerText = 'Connecting the dots....' %}
+  {% set bannerBackground = "/media/lighthouse-background-03.jpg" %}
+  {% set action = { text: 'Get Started', url: '/signup' } %}
+  {% include "partials/banner.njk" %}
+{% endblock %}
 
-  </div>
-</section>
+{% block content %}
 <section id="features" class="section-base section-color">
   <div class="container">
     <h2 class="align-center">All the data you need, in one place.</h2>
