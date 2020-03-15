@@ -1,9 +1,9 @@
 ﻿{% extends "base.njk" %}
 
 {% block header %}
-  {% set bannerTitle = 'Project Lighthouse' %}
-  {% set bannerText = 'Connecting the dots....' %}
-  {% set bannerBackground = "/media/lighthouse-background-03.jpg" %}
+  {% set bannerTitle = home.title %}
+  {% set bannerText = home.subTitle %}
+  {% set bannerBackground = home.banner %}
   {% set action = { text: 'Get Started', url: '/signup' } %}
   {% include "partials/banner.njk" %}
 {% endblock %}
