@@ -3,117 +3,114 @@
 {% block header %}
   {% set bannerTitle = about.title %}
   {% set bannerText = about.subTitle %}
-  {% set bannerBackground = "/media/lighthouse-background-04.jpg" %}
+  {% set bannerBackground = about.banner %}
   {% include "partials/banner.njk" %}
 {% endblock %}
 
 {% block content %}
 
-    <section class="section-base section-color">
-      <div class="container">
-        <div class="row row-fit-lg">
-         <div class="col-lg-3">
-                        <p>
-                            The objective of Lighthouse is to aggregate data from key data sources &amp; provide the
-                            intelligence &amp; profiling engine for efficient &amp; intelligent data-driven processes.
-                            It is the <b>“single source of truth”</b> for revenue &amp; tax-related intelligence.
-
-                        </p>
-                    </div>
-                    <div class="col-lg-3">
-                        <p>
-                            This intelligence would in turn support the Ministry, its agencies, revenue agencies, tax
-                            authorities and other stakeholders to be better positioned to address the revenue challenges
-                            faced by the country.
-                        </p>
-                    </div>
-                    <div class="col-lg-1"></div>
-                    <div class="col-lg-5">
-                        <img class="margin-23 margin-md-23" src="/media/lighthouse-background-09.jpg" />
-                    </div>
-        </div>
-      </div>
-    </section>
-    <section class="section-base">
-      <div class="container">
-        <div class="row">
-          <div class="caption">
-            <h2>Background</h2>
-          </div>
-          <hr class="space"/>
+  <section class="section-base section-color">
+    <div class="container">
+      <div class="row row-fit-lg">
+        <div class="col-lg-3">
           <p>
-            In 2017, the Federal Government of Nigeria inaugurated a committee to oversee the implementation of a compliance scheme seeking ways to reduce budget deficits and tax shortfalls while simultaneously managing revenue more efficiently and diversifying revenue sources by improving revenue generation in the non-oil sector of the economy.
-          </p>
-          <p>
-            Hence, the introduction of Voluntary Assets and Income Declaration Scheme (VAIDS) on 29 June 2017, which was a compliance strategy with a time-threshold opportunity for taxpayers at the Federal and State levels to regularize their tax status relating to previous tax periods. Full and honest declarants of previously undisclosed assets and income during the window provided shall be forgiven of interest and penalties on overdue taxes and the assurance that they will not face criminal prosecution for tax offences or be subject to tax investigation.
-          </p>
-          <p>
-            In that regard, the Federal Ministry of Finance piloted Project Lighthouse, which involved the aggregation, centralization and analysis of nationwide tax payer data within the Federal Ministry of Finance. The objective of Lighthouse was for data to be aggregated from key data sources and Lighthouse would provide the intelligence and profiling engine for more efficient and intelligent data driven tax assessments, thus ensuring major tax loopholes are plugged and revenues dramatically increased.
+            The objective of Lighthouse is to aggregate data from key data sources &amp; provide the intelligence &amp; profiling engine for efficient &amp; intelligent data-driven processes. It is the
+            <b>“single source of truth”</b>
+            for revenue &amp; tax-related intelligence.
 
           </p>
-          <hr class="space"/>
-          <p class="quote">
-            One of the key economic policy objectives of the current administration, as contained in the Economic Recovery and Growth Plan (ERGP), is improving overall Federal Government revenues by targeting and increasing revenues from non-oil revenue sources.
-            <br><br>
-            Honorable Minister Of Finance.
-          </p>
-          <hr class="space"/>
+        </div>
+        <div class="col-lg-3">
           <p>
-            Following the consent of authority and the subsequent ratification of the project by the Federal Executive Council (FEC) on the 8th of May 2019,
-            <b>Project Lighthouse was formal inaugurated by the Minister, Federal Ministry of Finance on the 24th May, 2019</b>.
+            This intelligence would in turn support the Ministry, its agencies, revenue agencies, tax authorities and other stakeholders to be better positioned to address the revenue challenges faced by the country.
           </p>
-          <hr class="space"/>
+        </div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-5">
+          <img class="margin-23 margin-md-23" src="/media/lighthouse-background-09.jpg"/>
         </div>
       </div>
-    </section>
-    <section class="section-base section-color align-center">
-      <div class="container">
-        <h2>Project Categories.</h2>
+    </div>
+  </section>
+  <section class="section-base">
+    <div class="container">
+      <div class="row">
+        <div class="caption">
+          <h2>Background</h2>
+        </div>
         <hr class="space"/>
-        <div class="grid-list" data-columns="2" data-columns-md="2" data-columns-xs="1" data-anima="fade-bottom" data-timeline="asc" data-time="1000" data-timeline-time="300">
-          <div class="grid-box">
-            <div class="grid-item anima">
-              <div class="cnt-box cnt-box-top-icon boxed align-center">
-                <div class="caption">
-                  <h2>Revenue Performance</h2>
-                  <p>
-                    Capture current and historic performance across oil &amp; non-oil revenue sectors and track current year revenue on a month-on-month basis.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="grid-item anima">
-              <div class="cnt-box cnt-box-top-icon boxed align-center">
-                <div class="caption">
-                  <h2>Revenue Improvement</h2>
-                  <p>
-                    Provide information to help enhance the present revenue generation efforts of the Government through revenue optimization and recovery of accrued debts.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="grid-item anima">
-              <div class="cnt-box cnt-box-top-icon boxed align-center">
-                <div class="caption">
-                  <h2>Debt Recovery</h2>
-                  <p>
-                    Assist the Ministry of Finance to establish a platform for all MDAs to report records on Lighthouse Systems. MDAs access the platform to update debt records progressively.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="grid-item anima">
-              <div class="cnt-box cnt-box-top-icon boxed align-center">
-                <div class="caption">
-                  <h2>Sub-national Revenue Support</h2>
-                  <p>
-                    Support states with insights &amp; intelligence on revenue performance to improve on the revenue shortfalls and budget deficits of the states.
-                  </p>
-                </div>
-              </div>
-            </div>
+        <p>
+          In 2017, the Federal Government of Nigeria inaugurated a committee to oversee the implementation of a compliance scheme seeking ways to reduce budget deficits and tax shortfalls while simultaneously managing revenue more efficiently and diversifying revenue sources by improving revenue generation in the non-oil sector of the economy.
+        </p>
+        <p>
+          Hence, the introduction of Voluntary Assets and Income Declaration Scheme (VAIDS) on 29 June 2017, which was a compliance strategy with a time-threshold opportunity for taxpayers at the Federal and State levels to regularize their tax status relating to previous tax periods. Full and honest declarants of previously undisclosed assets and income during the window provided shall be forgiven of interest and penalties on overdue taxes and the assurance that they will not face criminal prosecution for tax offences or be subject to tax investigation.
+        </p>
+        <p>
+          In that regard, the Federal Ministry of Finance piloted Project Lighthouse, which involved the aggregation, centralization and analysis of nationwide tax payer data within the Federal Ministry of Finance. The objective of Lighthouse was for data to be aggregated from key data sources and Lighthouse would provide the intelligence and profiling engine for more efficient and intelligent data driven tax assessments, thus ensuring major tax loopholes are plugged and revenues dramatically increased.
 
+        </p>
+        <hr class="space"/>
+        <p class="quote">
+          One of the key economic policy objectives of the current administration, as contained in the Economic Recovery and Growth Plan (ERGP), is improving overall Federal Government revenues by targeting and increasing revenues from non-oil revenue sources.
+          <br><br>
+          Honorable Minister Of Finance.
+        </p>
+        <hr class="space"/>
+        <p>
+          Following the consent of authority and the subsequent ratification of the project by the Federal Executive Council (FEC) on the 8th of May 2019,
+          <b>Project Lighthouse was formal inaugurated by the Minister, Federal Ministry of Finance on the 24th May, 2019</b>.
+        </p>
+        <hr class="space"/>
+      </div>
+    </div>
+  </section>
+  <section class="section-base section-color align-center">
+    <div class="container">
+      <h2>Project Categories.</h2>
+      <hr class="space"/>
+      <div class="grid-list" data-columns="2" data-columns-md="2" data-columns-xs="1" data-anima="fade-bottom" data-timeline="asc" data-time="1000" data-timeline-time="300">
+        <div class="grid-box">
+          <div class="grid-item anima">
+            <div class="cnt-box cnt-box-top-icon boxed align-center">
+              <div class="caption">
+                <h2>Revenue Performance</h2>
+                <p>
+                  Capture current and historic performance across oil &amp; non-oil revenue sectors and track current year revenue on a month-on-month basis.
+                </p>
+              </div>
+            </div>
           </div>
+          <div class="grid-item anima">
+            <div class="cnt-box cnt-box-top-icon boxed align-center">
+              <div class="caption">
+                <h2>Revenue Improvement</h2>
+                <p>
+                  Provide information to help enhance the present revenue generation efforts of the Government through revenue optimization and recovery of accrued debts.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item anima">
+            <div class="cnt-box cnt-box-top-icon boxed align-center">
+              <div class="caption">
+                <h2>Debt Recovery</h2>
+                <p>
+                  Assist the Ministry of Finance to establish a platform for all MDAs to report records on Lighthouse Systems. MDAs access the platform to update debt records progressively.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item anima">
+            <div class="cnt-box cnt-box-top-icon boxed align-center">
+              <div class="caption">
+                <h2>Sub-national Revenue Support</h2>
+                <p>
+                  Support states with insights &amp; intelligence on revenue performance to improve on the revenue shortfalls and budget deficits of the states.
+                </p>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
