@@ -23,16 +23,15 @@ module.exports = function(config) {
 
   // Custom collections
   const liveNews = article => article.date <= now && !article.data.draft;
-  config.addCollection('news', collection => {
-    return [
-      ...collection.getFilteredByGlob('./src/news/*.md').filter(liveNews)
-    ].reverse();
-  });
 
   config.addCollection('newsFeed', collection => {
     return [
       ...collection.getFilteredByGlob('./src/news/*.md').filter(liveNews)
     ].reverse();
+  });
+
+  config.addCollection('faqs', collection => {
+    return [...collection.getFilteredByGlob('./src/faqs/*.md')];
   });
 
   // 404

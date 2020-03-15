@@ -1,0 +1,19 @@
+{% if faqs.length %}
+  <div class="col-lg-8">
+    <h3>General questions</h3>
+    <hr class="space-sm">
+    <ul class="accordion-list">
+      {% for faq in faqs %}
+        <li>
+          <a href="#">{{faq.question}}}</a>
+          <div class="content">
+            <p>
+              {{faq.answer}}
+            </p>
+          </div>
+        </li>
+
+      {% endfor %}
+    </ul>
+  </div>
+{% endif%}
