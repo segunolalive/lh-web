@@ -4,7 +4,8 @@
   "description": "",
   "main": ".eleventy.js",
   "scripts": {
-    "serve": "eleventy --serve"
+    "serve": "eleventy --serve",
+    "start": " npx eleventy"
   },
   "dependencies": {
     "@11ty/eleventy": "^0.10.0"

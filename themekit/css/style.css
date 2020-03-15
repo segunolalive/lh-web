@@ -704,7 +704,7 @@ body > nav > .container {
     color: #FFF;
 }
 
-.logo-retina {
+/* .logo-retina {
     display: none !important;
 }
 
@@ -716,7 +716,7 @@ body > nav > .container {
     .logo-default {
         display: none !important;
     }
-}
+} */
 
 body > nav .menu-brand {
     float: left;

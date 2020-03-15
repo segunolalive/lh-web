@@ -1,13 +1,11 @@
+{% set title = site.name %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Project Lighthouse</title>
     <meta name="description" content="Official website of the Project Lighthouse Nigeria">
-    <script src="/themekit/scripts/jquery.min.js"></script>
-    <script src="/themekit/scripts/main.js"></script>
     <link rel="stylesheet" href="/themekit/css/bootstrap-grid.css">
     <link rel="stylesheet" href="/themekit/css/style.css">
     <link rel="stylesheet" href="/themekit/css/glide.css">
@@ -17,7 +15,11 @@
     <link rel="stylesheet" href="/themekit/css/media-box.css">
     <link rel="stylesheet" href="/static/styles/skin.css">
     <link rel="stylesheet" href="/static/styles/custom.css">
-    <link rel="icon" href="/media/favicon.png">
+    <link rel="icon" href="{{site.faviconPath}}">
+    {% include "partials/global/meta-info.njk" %}
+
+    <script src="/themekit/scripts/jquery.min.js"></script>
+    <script src="/themekit/scripts/main.js"></script>
   </head>
 
   <body>
@@ -30,13 +32,12 @@
 
     <main id="main-content" tabindex="-1" class="footer-parallax-cnt">
 
-    {% block content %}
-      {{ content | safe }}
-    {% endblock %}
+      {% block content %}
+        {{ content | safe }}
+      {% endblock %}
 
     </main>
     {% include "./partials/footer.njk" %}
-
 
     <link rel="stylesheet" href="/themekit/media/icons/iconsmind/line-icons.min.css">
     <script src="/themekit/scripts/parallax.min.js"></script>
