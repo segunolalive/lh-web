@@ -14,7 +14,7 @@
                 <div class="blog-date">
                   <span>{{item.date.toLocaleDateString('en-US', options)}}</span>
                 </div>
-                <img src="{{item.image}}" alt=""/>
+                <img src="{{'/media/' + item.data.image}}" alt=""/>
               </a>
               <div class="caption">
                 <h2>{{ item.data.title }}</h2>
