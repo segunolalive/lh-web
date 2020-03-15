@@ -45,7 +45,7 @@ collections:
       - name: 'news'
         label: 'News Page'
         delete: false
-        file: "src/_data/news.json"
+        file: 'src/_data/news.json'
         slug: '{{slug}}'
         create: false
         fields:
@@ -78,7 +78,7 @@ collections:
       - name: 'about'
         label: 'About Page'
         delete: false
-        file: "src/_data/about.json"
+        file: 'src/_data/about.json'
         slug: '{{slug}}'
         create: false
         fields:
@@ -143,6 +143,20 @@ collections:
       - { label: 'Image', name: 'image', widget: 'image' }
       - { label: 'Tags', name: 'tags', widget: 'list', allow_add: true }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'faqs'
+    label: 'FAQs'
+    folder: 'src/faqs'
+    create: true
+    preview_path: 'faqs/{{slug}}'
+    fields:
+      - {
+          label: 'Layout',
+          name: 'layout',
+          widget: 'hidden',
+          default: 'base.njk',
+        }
+      - { label: 'Question', name: 'question', widget: 'string' }
+      - { label: 'Answer', name: 'answer', widget: 'string' }
   - label: 'Globals'
     name: 'globals'
     files:

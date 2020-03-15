@@ -1,99 +1,14 @@
 ﻿{% extends "base.njk" %}
 
+{% set faqs = collections.faqs %}
+
 {% block content %}
   <section class="section-base">
   <div class="container">
     <hr class="space-sm"/>
     <hr class="space"/>
     <div class="row">
-      <div class="col-lg-8">
-        <h3>General questions</h3>
-        <hr class="space-sm">
-        <ul class="accordion-list">
-          <li>
-            <a href="#">What is Project Lighthouse?</a>
-            <div class="content">
-              <p>
-                Project Lighthouse is a data driven artificial intelligence engine that provides the Federal Ministry of Finance (FMF) with an intelligence and profiling platform to aid in policy formulation, implementation and assessing the impacts of those policies which would support its MDAs to develop a more efficient revenue assessment methodology by ensuring that major revenue loopholes are plugged, and revenue collection is dramatically improved
-              </p>
-            </div>
-          </li>
-          <li>
-            <a href="#">What Are the Objectives of Project Lighthouse?</a>
-            <div class="content">
-              <p>
-                The objective of Lighthouse is the aggregation of data from key data sources to provide the Honorable Minister of Finance, the ministry and all revenue agencies under the ministry with the capability to generate useful and insightful information for a more efficient and intelligent data-driven revenue mobilization model, thus ensuring major loopholes are blocked and revenues dramatically increased.
-              </p>
-            </div>
-          </li>
-          <li>
-            <a href="#">
-              What are the benefits of Project Lighthouse System?</a>
-            <div class="content">
-              <p>
-                From the data provided, the system will be able to analyze and provide an analytic view of revenue sources across the country and optimize the collection of those revenues. Provide revenue performance support to agencies of the ministry as well as other arms of governments at federal and state levels. Improve the compliance of Nigerian tax payers through a validation and verification function built into the system. Detect and highlight anomalies in revenue forecast and performance. Help the states to proactively identify prospective revenue sources and supporting the implementation of revenue optimization programmes.
-              </p>
-            </div>
-          </li>
-          <li>
-            <a href="#">Why do we need Project Lighthouse?</a>
-            <div class="content">
-              <p>
-                The overall revenue performance for 2018 is only 53 percent of the target in the 2018 Budget of the total appropriation of N9.12 trillion, N4.59 trillion had been released. This shows a significant shortfall in revenue realization and collection. The system would provide insights to aid stakeholders in policy formulation and optimize revenue generation.
-              </p>
-            </div>
-          </li>
-          <li>
-            <a href="#">Where is the Data Coming From?</a>
-            <div class="content">
-              <p>
-                Available data sources include collection of data from revenue agencies under the ministry as well as data generating projects under the ministry. Third party data hosts will also be part of the platform
-              </p>
-            </div>
-          </li>
-          <li>
-            <a href="#">Who are the Critical Stakeholders?
-            </a>
-            <div class="content">
-              <p>
-                The Project depends on the active involvement of various stakeholders throughout the project who would be required to supply data and take advantage of the Lighthouse system. They include: FMF, FIRS, JTB/ SIRS, CBN, NCS, CAC, NIBSS, NBS, DPR, ICPC, BOF, RMAFC, EFCC, SEC, AGIS, NNPC.
-              </p>
-            </div>
-          </li>
-          <li>
-            <a href="#">Is there any law supporting Project Lighthouse implementation?</a>
-            <div class="content">
-              <p>
-                Yes, the mandate of the Federal Ministry of Finance grants them the power to formulate policies and fiscal matters; prepare estimate of revenue and expenditures; formulate policies in collaboration with CBN to curb inflationary trends in the economy; prepare and publish quarterly and annual reports on the economy; and monitor financial resources for development purposes.
-              </p>
-            </div>
-          </li>
-          <li>
-            <a href="#">Who can connect to Lighthouse?</a>
-            <div class="content">
-              <p>
-                Any of the identified stakeholders and MDAs with verifiable need.
-              </p>
-            </div>
-          </li>
-          <li>
-            <a href="#">How does Project Lighthouse add value to SRGI?</a>
-            <div class="content">
-              <p>
-                Project Lighthouse was listed as one of the portfolio projects under the Federal Ministry of Finance flagship Strategic Revenue Growth Initiative (SRGI). The SRGI was built on three core thematic areas including; Achieve sustainability in revenue generation, Identify new and enhance the enforcement of existing revenue streams, Achieve cohesion in the revenue ecosystem (people and tools) and the objectives of project lighthouse are centered around Policy formulation targeted at boosting the revenue drive of the nation’s economy.
-              </p>
-            </div>
-          </li>
-          <li>
-            <a href="#">How does Project Lighthouse impact the Nigerian general public?</a>
-            <div class="content">
-              <p>
-                It gives the Ministry of finance insights and information to guide policy formulation, implementation and impact assessment to improve the economy.
-              </p>
-            </div>
-          </li>
-        </ul>
-      </div>
+      {% include "partials/faq.njk" %}
       <div class="col-lg-4">
         <div class="fixed-area support-box" data-offset="80">
           <h2>Request support.</h2>
