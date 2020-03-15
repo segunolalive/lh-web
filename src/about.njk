@@ -1,8 +1,8 @@
 ﻿{% extends "base.njk" %}
 
 {% block header %}
-  {% set bannerTitle = 'About' %}
-  {% set bannerText = 'Data is the new oil' %}
+  {% set bannerTitle = about.title %}
+  {% set bannerText = about.subTitle %}
   {% set bannerBackground = "/media/lighthouse-background-04.jpg" %}
   {% include "partials/banner.njk" %}
 {% endblock %}
