@@ -10,8 +10,7 @@ module.exports = function(config) {
   config.addPassthroughCopy('themekit');
   config.addPassthroughCopy('media');
   config.addPassthroughCopy('static');
-  config.addPassthroughCopy('src/admin/config.yml');
-  config.addPassthroughCopy('src/admin/utils.js');
+  config.addPassthroughCopy('src/admin');
 
   // Filters
   config.addFilter('dateFilter', dateFilter);
