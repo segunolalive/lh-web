@@ -59,3 +59,11 @@ footer.footer-parallax.light a:active {
 footer.footer-parallax.light li::before {
   background-color: white;
 }
+
+nav.menu-classic.menu-fixed.menu-transparent.menu-one-page.align-right.light {
+  background: #fff;
+}
+
+.justify {
+  text-align: justify;
+}
