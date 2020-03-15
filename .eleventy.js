@@ -22,19 +22,17 @@ module.exports = function(config) {
   const now = new Date();
 
   // Custom collections
-  const livePosts = post => post.date <= now && !post.data.draft;
-  config.addCollection('posts', collection => {
+  const liveNews = article => article.date <= now && !article.data.draft;
+  config.addCollection('news', collection => {
     return [
-      ...collection.getFilteredByGlob('./src/posts/*.md').filter(livePosts)
+      ...collection.getFilteredByGlob('./src/news/*.md').filter(liveNews)
     ].reverse();
   });
 
-  config.addCollection('postFeed', collection => {
+  config.addCollection('newsFeed', collection => {
     return [
-      ...collection.getFilteredByGlob('./src/posts/*.md').filter(livePosts)
-    ]
-      .reverse()
-      .slice(0, site.maxPostsPerPage);
+      ...collection.getFilteredByGlob('./src/news/*.md').filter(liveNews)
+    ].reverse();
   });
 
   // 404
