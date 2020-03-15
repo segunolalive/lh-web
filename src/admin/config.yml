@@ -22,7 +22,6 @@ collections:
               widget: 'hidden',
               default: 'base.njk',
             }
-          - { label: 'Title', name: 'title', widget: 'string' }
           - {
               label: 'SEO Meta Title',
               name: 'metaTitle',
@@ -35,25 +34,14 @@ collections:
               widget: 'string',
               required: false,
             }
-          - {
-              label: 'Post Feed Heading',
-              name: 'postsHeading',
-              widget: 'string',
-              default: 'Latest posts',
-            }
-          - {
-              label: 'Archive Link Text',
-              name: 'archiveButtonText',
-              widget: 'string',
-              default: 'See all posts',
-            }
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Sub Title', name: 'subTitle', widget: 'string' }
           - {
               label: 'Social Image',
               name: 'socialImage',
               widget: 'image',
               required: false,
             }
-          - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'news'
     label: 'News'
     folder: 'src/news'
