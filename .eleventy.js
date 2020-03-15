@@ -32,7 +32,7 @@ module.exports = function(config) {
 
   config.addCollection('faqs', collection => {
     return [...collection.getFilteredByGlob('./src/faqs/*.md')];
-  });
+  })
 
   // 404
   config.setBrowserSyncConfig({
