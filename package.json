@@ -5,7 +5,8 @@
   "main": ".eleventy.js",
   "scripts": {
     "cms:precompile": "make-dir dist/admin && nunjucks-precompile src/**/*.njk > dist/admin/templates.js -i \"\\.(njk|css|svg)$\"",
-    "serve": "npm run cms:precompile && eleventy --serve",
+    "debug": "npm run cms:precompile && DEBUG=Eleventy* eleventy --serve",
+    "serve": "npm run cms:precompile &&  eleventy --serve",
     "start": "npm run cms:precompile && npx eleventy",
     "production": "npm run cms:precompile && npm run cms:bundle && npx eleventy"
   },

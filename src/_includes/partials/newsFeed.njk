@@ -1,0 +1,37 @@
+{% if newsFeed.length %}
+  {% set options = {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric'
+  } %}
+  <div class="col-lg-8">
+    <div class="grid-list" data-columns="1">
+      <div class="grid-box">
+        {% for item in newsFeed %}
+          <div class="grid-item">
+            <div class="cnt-box cnt-box-blog-side boxed" data-href="/#">
+              <a href="/#" class="img-box">
+                <div class="blog-date">
+                  <span>{{item.date.toLocaleDateString('en-US', options)}}</span>
+                </div>
+                <img src="{{item.image}}" alt=""/>
+              </a>
+              <div class="caption">
+                <h2>{{ item.data.title }}</h2>
+                <span>{{item.date.toLocaleDateString()}}</span>
+                <div class="icon-list"></div>
+                <div>
+                  {{ item.templateContent | markdownFilter | safe }}
+                </div>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="list-pagination">
+      <ul class="pagination pagination-lg" data-page-items="2" data-options="scrollTop:true"></ul>
+    </div>
+  </div>
+{% endif %}
