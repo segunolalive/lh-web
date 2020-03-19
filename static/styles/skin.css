@@ -190,11 +190,11 @@ nav.light a.btn-border, .dropdown > ul li:hover > a, .dropdown > ul li.active > 
 }
 
 .btn:not(.btn-border):hover, .icon-links-button a:hover {
-    background-color: #4c9a2a;
+    background-color: #62914e;
 }
 
 .btn:not(.btn-border):hover, .input-text:focus, .input-select:focus, .input-textarea:focus, .search-bar input[type=text]:focus {
-    border-color: #4c9a2a;
+    border-color: #62914e;
 }
 
 .light p, .btn-border:hover, .media-box-full .caption .extra-field, .media-box-reveal p, .light .accordion-list > li > a, .media-box p {
