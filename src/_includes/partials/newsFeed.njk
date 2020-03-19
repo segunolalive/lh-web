@@ -21,7 +21,8 @@
                 <span>{{item.date.toLocaleDateString()}}</span>
                 <div class="icon-list"></div>
                 <div>
-                  {{ item.templateContent | markdownFilter | safe }}
+                  {# {{ item.templateContent | markdownFilter | safe }} #}
+                  {{ item.content }}
                 </div>
               </div>
             </div>

@@ -159,6 +159,20 @@ collections:
         }
       - { label: 'Question', name: 'question', widget: 'string' }
       - { label: 'Answer', name: 'answer', widget: 'string' }
+  - name: 'projectCategories'
+    label: 'Project Categories'
+    folder: 'src/faqs'
+    create: true
+    preview_path: 'faqs/{{slug}}'
+    fields:
+      - {
+          label: 'Layout',
+          name: 'layout',
+          widget: 'hidden',
+          default: 'base.njk',
+        }
+      - { label: 'Question', name: 'question', widget: 'string' }
+      - { label: 'Answer', name: 'answer', widget: 'string' }
   - label: 'Globals'
     name: 'globals'
     files:
