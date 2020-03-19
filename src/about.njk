@@ -1,9 +1,7 @@
 ﻿{% extends "base.njk" %}
 
 {% block header %}
-  {% set bannerTitle = about.title %}
-  {% set bannerText = about.subTitle %}
-  {% set bannerBackground = about.banner %}
+  {% set header = about %}
   {% include "partials/banner.njk" %}
 {% endblock %}
 

@@ -1,9 +1,7 @@
 ﻿{% extends "base.njk" %}
 
 {% block header %}
-  {% set bannerTitle = home.title %}
-  {% set bannerText = home.subTitle %}
-  {% set bannerBackground = home.banner %}
+  {% set header = home %}
   {% set action = { text: 'Get Started', url: '/signup' } %}
   {% include "partials/banner.njk" %}
 {% endblock %}
