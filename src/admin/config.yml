@@ -68,14 +68,15 @@ collections:
               widget: 'string',
               required: false,
             }
-          - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: 'Sub Title', name: 'subTitle', widget: 'string' }
           - {
               label: 'Social Image',
               name: 'socialImage',
               widget: 'image',
               required: false,
             }
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Sub Title', name: 'subTitle', widget: 'string' }
+          - { label: 'Banner Image', name: 'banner', widget: 'image' }
       - name: 'about'
         label: 'About Page'
         delete: false
