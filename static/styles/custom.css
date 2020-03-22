@@ -10,6 +10,17 @@
   height: 100px !important;
 }
 
+.slider-image {
+  width: 100%;
+  height: 600px;
+}
+
+.slider-text{
+  position: absolute;
+  margin: 10px 10px 0% 10%;
+  top: -400px;
+}
+
 .p-20 {
   padding: 30px;
 }
