@@ -4,13 +4,12 @@ const dateFilter = require('./src/filters/date-filter.js');
 const markdownFilter = require('./src/filters/markdown-filter.js');
 const w3DateFilter = require('./src/filters/w3-date-filter.js');
 
-const site = require('./src/_data/site.json');
-
 module.exports = function(config) {
   config.addPassthroughCopy('themekit');
   config.addPassthroughCopy('media');
   config.addPassthroughCopy('static');
-  config.addPassthroughCopy('src/filters');
+  // config.addPassthroughCopy('src/admin/config.yml');
+  // config.addPassthroughCopy('src/admin/previews.js');
   config.addPassthroughCopy('src/admin');
   config.addPassthroughCopy('node_modules/nunjucks/browser/nunjucks-slim.js');
 
@@ -54,6 +53,11 @@ module.exports = function(config) {
       input: 'src',
       output: 'dist'
     },
-    passthroughFileCopy: true
+    passthroughFileCopy: true,
+    pathPrefix: '/',
+    templateFormats: ['md', 'njk', 'html'],
+    markdownTemplateEngine: 'njk',
+    htmlTemplateEngine: 'njk',
+    dataTemplateEngine: 'njk'
   };
 };

@@ -195,3 +195,14 @@ collections:
               name: 'faviconPath',
               widget: 'string',
             }
+      - label: 'Key Stakeholders'
+        name: 'stakeholders'
+        widget: 'list'
+        file: 'src/_data/stakeholders.json'
+        fields:
+          - name: stakeholder
+            label: Stakeholder
+            widget: list
+            fields:
+              - { label: 'Institution', name: 'name', widget: 'string' }
+              - { label: 'Logo', name: 'logo', widget: 'image' }
