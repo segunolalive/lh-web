@@ -5,9 +5,14 @@ permalink: /
 
 {% block header %}
   {% set header = home %}
-  {% set action = { text: 'Get Started', url: '/signup' } %}
+  {% set action = {
+    text: 'Get Started',
+    url: '/signup'
+  } %}
   {% include "partials/banner.njk" %}
 {% endblock %}
+
+{% set newsFeed= collections.newsFeed %}
 
 {% block content %}
   <section id="features" class="section-base section-color">
