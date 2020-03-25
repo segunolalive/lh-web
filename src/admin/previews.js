@@ -1,5 +1,7 @@
 const { w3DateFilter, markdownFilter, dateFilter, helpers } = previewUtil;
 
+import Home from '/admin/preview-templates/home.js';
+
 const env = nunjucks.configure();
 
 env.addFilter('w3DateFilter', w3DateFilter);
@@ -12,7 +14,7 @@ const Preview = ({ entry, path, context }) => {
   return <div dangerouslySetInnerHTML={{ __html: html }} />;
 };
 
-const Home = ({ entry }) => (
+const HomeX = ({ entry }) => (
   <Preview
     entry={entry}
     path="index.njk"
@@ -85,7 +87,7 @@ const Nav = ({ entry }) => (
   />
 );
 
-CMS.registerPreviewTemplate('home', Home);
+// CMS.registerPreviewTemplate('home', Home);
 CMS.registerPreviewTemplate('posts', Post);
 CMS.registerPreviewTemplate('generic_pages', Page);
 CMS.registerPreviewTemplate('site_data', SiteData);
