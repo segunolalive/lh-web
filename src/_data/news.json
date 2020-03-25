@@ -1,8 +1,8 @@
 {
-  "socialImage": "uploads/lighthouse-background-06.jpg",
+  "SEOImage": "uploads/lighthouse-background-06.jpg",
   "metaTitle": "News",
   "metaDesc": "Get the latest updates on the Lighthouse projects",
-  "title": "News",
-  "subTitle": "Latest happenings on Project LightHouse",
+  "headline": "News",
+  "subHead": "Latest happenings on Project LightHouse",
   "banner": "uploads/lighthouse-background-06.jpg"
 }
