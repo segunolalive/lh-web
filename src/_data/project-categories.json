@@ -11,6 +11,10 @@
     {
       "description": "Assist the Ministry of Finance to establish a platform for all MDAs to report records on Lighthouse Systems. MDAs access the platform to update debt records progressively.",
       "category": "Debt Recovery"
+    },
+    {
+      "description": "Support states with insights & intelligence on revenue performance to improve on the revenue shortfalls and budget deficits of the states.",
+      "category": "Sub-national Revenue Support"
     }
   ]
 }
