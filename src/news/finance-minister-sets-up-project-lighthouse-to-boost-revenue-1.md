@@ -2,6 +2,7 @@
 layout: base.njk
 title: Finance Minister sets up Project Lighthouse to boost revenue
 date: 2020-03-15T12:12:35.474Z
+headline: Finance Minister sets up Project Lighthouse to boost revenue
 image: uploads/nat-and-i.png
 tags:
   - revenue
