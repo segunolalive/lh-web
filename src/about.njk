@@ -68,8 +68,8 @@
       <h2>{{projectCategories.title}}.</h2>
       <hr class="space"/>
       <div class="grid-list" data-columns="2" data-columns-md="2" data-columns-xs="1" data-anima="fade-bottom" data-timeline="asc" data-time="1000" data-timeline-time="300">
-        {% for category in projectCategories.categories %}
-          <div class="grid-box">
+        <div class="grid-box">
+        {% for item in projectCategories.categories %}
             <div class="grid-item anima">
               <div class="cnt-box cnt-box-top-icon boxed align-center">
                 <div class="caption">
@@ -80,8 +80,8 @@
                 </div>
               </div>
             </div>
-          </div>
         {% endfor %}
+        </div>
       </div>
     </div>
   </section>
