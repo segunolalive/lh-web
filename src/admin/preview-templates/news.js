@@ -4,75 +4,46 @@ const html = htm.bind(h);
 
 const News = createClass({
   render() {
-    const entry = this.props.entry;
-    const title = entry.getIn(['data', 'title']);
-    const subHead = entry.getIn(['data', 'subHead']);
-    const banner = entry.getIn(['data', 'banner']);
-    const action = { text: 'Get Started', url: '/signup' };
+    console.log(this.props.entry.getIn(['data']).toJS());
+    const { headline, image, date, body } = this.props.entry
+      .getIn(['data'])
+      .toJS();
 
     return html`
       <section class="section-base section-color">
         <div class="container">
           <div class="row">
-            {% include "partials/newsFeed.njk" %}
+            <div class="col-lg-12">
+              <div class="grid-list" data-columns="1">
+                <div class="grid-box">
+                  <div class="grid-item">
+                    <div class="cnt-box cnt-box-blog-side boxed" data-href="/#">
+                      <a href="/#" class="img-box">
+                        <div class="blog-date">
+                          <span>${date.toLocaleDateString()}</span>
+                        </div>
+                        <img src="/media/${image}" alt="" />
+                      </a>
+                      <div class="caption">
+                        <h2>${headline}</h2>
+                        <span>${date.toLocaleDateString()}</span>
+                        <div class="icon-list"></div>
+                        <div>
+                          ${body}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-            <div class="col-lg-4 widget">
-              <hr class="space visible-md" />
-              <hr class="space-sm" />
-              <h3>Categories</h3>
-              <hr class="space-xs" />
-              <div class="menu-inner menu-inner-vertical">
-                <ul>
-                  <li>
-                    <a href="/news">
-                      Debt Recovery
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/news">
-                      Revenue performance
-                    </a>
-                  </li>
-                </ul>
+              <div class="list-pagination">
+                <ul
+                  class="pagination pagination-lg"
+                  data-page-items="2"
+                  data-options="scrollTop:true"
+                ></ul>
               </div>
-              <hr class="space-sm" />
-              <h3>Latest posts</h3>
-              <hr class="space-sm" />
-              <div class="menu-inner menu-inner-vertical menu-inner-image">
-                <ul>
-                  <li>
-                    <a href="/news_item">
-                      <img src="/media/minister-of-finance.jpg" alt="" />
-                      <span>February 12, 2020</span>
-                      2nd Project Lighthouse Steering committee meeting
-                    </a>
-                  </li>
-                  <li>
-                    <a href="news_item">
-                      <img src="/media/lighthouse-image-02.jpg" alt="" />
-                      <span>February 25, 2020</span>
-                      Six best practices for using artificial intelligence data
-                    </a>
-                  </li>
-                  <li>
-                    <a href="news_item">
-                      <img src="/media/lighthouse-image-04.jpg" alt="" />
-                      <span>April 19, 2020</span>
-                      Machine learning and AI are raising concerns
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <hr class="space-sm" />
-              <h3>Tags</h3>
-              <hr class="space-sm" />
-              <div class="list-tags">
-                <a href="/news">Debt Recovery</a>
-                <a href="/news">Revenue Performance</a>
-                <a href="/news">Economy</a>
-                <a href="/news">Data</a>
-              </div>
-              <hr class="space-sm" />
             </div>
           </div>
         </div>
