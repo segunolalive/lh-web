@@ -123,7 +123,6 @@ collections:
           widget: 'hidden',
           default: 'base.njk',
         }
-      - { label: 'Headline', name: 'headline', widget: 'string' }
       - {
           label: 'SEO Meta Title',
           name: 'metaTitle',
@@ -137,12 +136,13 @@ collections:
           required: false,
         }
       - {
-          label: 'Social Image',
+          label: 'SEO Image',
           name: 'SEOImage',
           widget: 'image',
           required: false,
         }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Headline', name: 'headline', widget: 'string' }
       - { label: 'Image', name: 'image', widget: 'image' }
       - { label: 'Tags', name: 'tags', widget: 'list', allow_add: true }
       - { label: 'Body', name: 'body', widget: 'markdown' }
