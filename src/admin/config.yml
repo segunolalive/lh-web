@@ -50,13 +50,22 @@ collections:
         delete: false
         preview_path: '/faqs'
         fields:
+          - name: faqHeadline
+            label: FAQ Headline
+            widget: string
+          - name: contactHeadline
+            label: Contact Headline
+            widget: string
+          - name: contactSubHead
+            label: Contact SubHead
+            widget: string
           - name: contact
             label: Contact Info
             fields:
               - { label: 'Headline', name: 'headline', widget: 'string' }
               - { label: 'Sub Head', name: 'subHead', widget: 'string' }
-          - name: faq
-            label: FAQ
+          - name: faqs
+            label: FAQs
             widget: list
             fields:
               - { label: 'Question', name: 'question', widget: 'string' }
@@ -102,10 +111,6 @@ collections:
         slug: '{{slug}}'
         create: false
         fields:
-          - label: 'Layout'
-            name: 'layout'
-            widget: 'hidden'
-            default: 'base.njk'
           - label: 'SEO Meta Title'
             name: 'metaTitle'
             widget: 'string'
@@ -134,6 +139,7 @@ collections:
             fields:
               - { label: 'First Column', name: 'column1', widget: 'string' }
               - { label: 'Second Column', name: 'column2', widget: 'string' }
+              - { label: 'Image', name: 'image', widget: 'image' }
           - label: Background
             name: background
             widget: markdown
