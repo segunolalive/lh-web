@@ -1,21 +1,21 @@
 {
+  "title": "Project Categories",
   "categories": [
     {
-      "description": "Capture current and historic performance across oil & non-oil revenue sectors and track current year revenue on a month-on-month basis.",
-      "category": "Revenue Performance"
+      "category": "Revenue Performance ",
+      "description": "Capture current and historic performance across oil & non-oil revenue sectors and track current year revenue on a month-on-month basis."
     },
     {
-      "description": "Provide information to help enhance the present revenue generation efforts of the Government through revenue optimization and recovery of accrued debts.",
-      "category": "Revenue Improvement"
+      "category": "Revenue Improvement",
+      "description": " Provide information to help enhance the present revenue generation efforts of the Government through revenue optimization and recovery of accrued debts."
     },
     {
-      "description": "Assist the Ministry of Finance to establish a platform for all MDAs to report records on Lighthouse Systems. MDAs access the platform to update debt records progressively.",
-      "category": "Debt Recovery"
+      "category": "Debt Recovery",
+      "description": " Assist the Ministry of Finance to establish a platform for all MDAs to report records on Lighthouse Systems. MDAs access the platform to update debt records progressively."
     },
     {
-      "category": "Sub-national Revenue Support",
+      "category": "Sub-national Revenue Support ",
       "description": "Support states with insights & intelligence on revenue performance to improve on the revenue shortfalls and budget deficits of the states."
     }
-  ],
-  "title": "LightHouse Project Categories"
+  ]
 }
