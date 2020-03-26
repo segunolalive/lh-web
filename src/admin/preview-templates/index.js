@@ -1,10 +1,12 @@
 import Home from '/admin/preview-templates/home.js';
 import News from '/admin/preview-templates/news.js';
 import Banner from '/admin/preview-templates/banner.js';
+import Categories from '/admin/preview-templates/project-categories.js';
 
 CMS.registerPreviewTemplate('home', Home);
 CMS.registerPreviewTemplate('news', Banner);
 CMS.registerPreviewTemplate('about', Banner);
+CMS.registerPreviewTemplate('projectCategories', Categories);
 
 // Register any CSS file on the home page as a preview style
 fetch('/')
@@ -17,6 +19,6 @@ fetch('/')
         CMS.registerPreviewStyle(tag.href);
       }
     });
-    CMS.registerPreviewStyle('./previews.css');
+    CMS.registerPreviewStyle('./preview-templates/previews.css');
   });
 

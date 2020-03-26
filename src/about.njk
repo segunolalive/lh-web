@@ -5,6 +5,7 @@
   {% include "partials/banner.njk" %}
 {% endblock %}
 
+{% set projectCategories = projectCategories %}
 {% block content %}
 
   <section class="section-base section-color">
@@ -64,55 +65,27 @@
   </section>
   <section class="section-base section-color align-center">
     <div class="container">
-      <h2>Project Categories.</h2>
+      <h2>{{projectCategories.title}}.</h2>
       <hr class="space"/>
       <div class="grid-list" data-columns="2" data-columns-md="2" data-columns-xs="1" data-anima="fade-bottom" data-timeline="asc" data-time="1000" data-timeline-time="300">
-        <div class="grid-box">
-          <div class="grid-item anima">
-            <div class="cnt-box cnt-box-top-icon boxed align-center">
-              <div class="caption">
-                <h2>Revenue Performance</h2>
-                <p>
-                  Capture current and historic performance across oil &amp; non-oil revenue sectors and track current year revenue on a month-on-month basis.
-                </p>
+        {% for category in projectCategories.categories %}
+          <div class="grid-box">
+            <div class="grid-item anima">
+              <div class="cnt-box cnt-box-top-icon boxed align-center">
+                <div class="caption">
+                  <h2>{{item.category}}</h2>
+                  <p>
+                    {{item.description}}
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="grid-item anima">
-            <div class="cnt-box cnt-box-top-icon boxed align-center">
-              <div class="caption">
-                <h2>Revenue Improvement</h2>
-                <p>
-                  Provide information to help enhance the present revenue generation efforts of the Government through revenue optimization and recovery of accrued debts.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="grid-item anima">
-            <div class="cnt-box cnt-box-top-icon boxed align-center">
-              <div class="caption">
-                <h2>Debt Recovery</h2>
-                <p>
-                  Assist the Ministry of Finance to establish a platform for all MDAs to report records on Lighthouse Systems. MDAs access the platform to update debt records progressively.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="grid-item anima">
-            <div class="cnt-box cnt-box-top-icon boxed align-center">
-              <div class="caption">
-                <h2>Sub-national Revenue Support</h2>
-                <p>
-                  Support states with insights &amp; intelligence on revenue performance to improve on the revenue shortfalls and budget deficits of the states.
-                </p>
-              </div>
-            </div>
-          </div>
-
-        </div>
+        {% endfor %}
       </div>
-    </section>
-    <section class="section-base">
+    </div>
+  </section>
+  <section class="section-base">
   <div class="container">
     <h2 class="align-center">Key Stakeholders</h2>
     <br>

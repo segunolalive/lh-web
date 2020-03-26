@@ -4,16 +4,15 @@ const html = htm.bind(h);
 
 const Home = createClass({
   render() {
-    const { title, subHead, banner } = this.props.entry.getIn(['data']).toJS();
+    const { headline, subHead, banner } = this.props.entry.getIn(['data']).toJS();
     const action = { text: 'Get Started', url: '/signup' };
 
-    console.log(this.props.widgetFor('banner'));
     return html`
       <header class="header-image ken-burn-center dark preview-banner">
         <img class="" src="/media/${banner}" alt="banner" />
-        <div class="container preview-banner__image">
+        <div class="container preview-banner__content">
           <hr class="space-lg" />
-          <h1>${title}</h1>
+          <h1>${headline}</h1>
           <h2>${subHead}</h2>
           <hr class="space" />
           <a href="${action.url}" class="btn btn-circle btn-sm"
@@ -27,3 +26,9 @@ const Home = createClass({
 });
 
 export default Home;
+
+
+
+
+
+

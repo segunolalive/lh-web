@@ -150,21 +150,7 @@ collections:
     label: 'FAQs'
     folder: 'src/faqs'
     create: true
-    preview_path: 'faqs/{{slug}}'
-    fields:
-      - {
-          label: 'Layout',
-          name: 'layout',
-          widget: 'hidden',
-          default: 'base.njk',
-        }
-      - { label: 'Question', name: 'question', widget: 'string' }
-      - { label: 'Answer', name: 'answer', widget: 'string' }
-  - name: 'projectCategories'
-    label: 'Project Categories'
-    folder: 'src/faqs'
-    create: true
-    preview_path: 'faqs/{{slug}}'
+    preview_path: '/faqs'
     fields:
       - {
           label: 'Layout',
@@ -206,3 +192,18 @@ collections:
             fields:
               - { label: 'Institution', name: 'name', widget: 'string' }
               - { label: 'Logo', name: 'logo', widget: 'image' }
+      - label: 'Project Categories'
+        name: 'projectCategories'
+        file: 'src/_data/projectCategories.json'
+        preview_path: '/about'
+        widget: 'list'
+        fields:
+          - name: title
+            label: Title
+            widget: string
+          - name: categories
+            label: Categories
+            widget: list
+            fields:
+              - { label: 'Category', name: 'category', widget: 'string' }
+              - { label: 'Short Description', name: 'description', widget: 'string' }
