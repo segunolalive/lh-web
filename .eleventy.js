@@ -8,10 +8,7 @@ module.exports = function(config) {
   config.addPassthroughCopy('themekit');
   config.addPassthroughCopy('media');
   config.addPassthroughCopy('static');
-  // config.addPassthroughCopy('src/admin/config.yml');
-  // config.addPassthroughCopy('src/admin/previews.js');
   config.addPassthroughCopy('src/admin');
-  config.addPassthroughCopy('node_modules/nunjucks/browser/nunjucks-slim.js');
 
   // Filters
   config.addFilter('dateFilter', dateFilter);

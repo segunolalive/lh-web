@@ -4,7 +4,6 @@ const html = htm.bind(h);
 
 const News = createClass({
   render() {
-    console.log(this.props.entry.getIn(['data']).toJS());
     const { headline, image, date, body } = this.props.entry
       .getIn(['data'])
       .toJS();
