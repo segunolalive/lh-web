@@ -126,7 +126,7 @@ collections:
             widget: 'image'
           - label: Row
             name: row
-            # allow_add: false
+            allow_add: false
             widget: list
             fields:
               - { label: 'First Column', name: 'column1', widget: 'string' }
