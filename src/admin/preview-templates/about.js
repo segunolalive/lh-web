@@ -5,7 +5,6 @@ const html = htm.bind(h);
 
 export default createClass({
   render() {
-    console.log(this.props.entry.getIn(['data']).toJS());
     const { background, row } = this.props.entry.getIn(['data']).toJS();
     return html`
       <${Banner} entry=${this.props.entry} />
