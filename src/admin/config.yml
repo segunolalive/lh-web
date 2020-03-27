@@ -50,8 +50,11 @@ collections:
         delete: false
         preview_path: '/faqs'
         fields:
-          - name: headline
+          - name: faqHeadline
             label: FAQ Headline
+            widget: string
+          - name: contactHeadline
+            label: Contact Headline
             widget: string
           - name: faqs
             label: FAQs
