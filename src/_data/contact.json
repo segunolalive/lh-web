@@ -1,0 +1,17 @@
+{
+  "contactInfo": [
+    {
+      "type": "Address",
+      "value": "14 Vistula Close, off Panama crescent, Maitama, Abuja."
+    },
+    {
+      "type": "Web",
+      "value": "https://app.projectlighthouse.gov.ng"
+    },
+    {
+      "type": "Email",
+      "value": "info@projectlighthouse.gov.ng"
+    }
+  ],
+  "headline": "Our team of seasoned professionals want to assist you."
+}
