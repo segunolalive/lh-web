@@ -44,26 +44,13 @@
             Our team of seasoned professionals want to assist you.
           </p>
           <ul class="text-list text-list-line">
+            {% for item in contact.contactInfo %}
             <li>
-              <b>Address</b>
+              <b>{{item.type}}</b>
               <hr/>
-              <p>14 Vistula Close, off Panama crescent, Maitama, Abuja.</p>
+              <p>{{item.value}}</p>
             </li>
-            <li>
-              <b>Web</b>
-              <hr/>
-              <p>https://www.projectlighthouse.gov.ng</p>
-            </li>
-            <li>
-              <b>Email</b>
-              <hr/>
-              <p>info@projectlighthouse.gov.ng</p>
-            </li>
-            <li>
-              <b>Phone</b>
-              <hr/>
-              <p>080CALLLH</p>
-            </li>
+            {% endfor %}
           </ul>
           <hr class="space-sm"/>
           <div class="icon-links icon-social icon-links-grid social-colors">

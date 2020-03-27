@@ -1,8 +1,5 @@
 ﻿{% extends "base.njk" %}
 
-{% set faqs = faqs %}
-{% set contacts = contacts %}
-
 {% block content %}
   <section class="section-base">
     <div class="container">
@@ -25,7 +22,6 @@
                   <p>{{item.value}}</p>
                 </li>
               {% endfor %}
-
             </ul>
             <br>
             <div class="icon-links icon-social social-colors">
