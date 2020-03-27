@@ -4,6 +4,8 @@ import Banner from '/admin/preview-templates/banner.js';
 import About from '/admin/preview-templates/about.js';
 import Categories from '/admin/preview-templates/project-categories.js';
 import FAQs from '/admin/preview-templates/faq.js';
+import Contact from '/admin/preview-templates/contact.js';
+
 
 CMS.registerPreviewTemplate('home', Home);
 CMS.registerPreviewTemplate('news', Banner);
@@ -11,6 +13,7 @@ CMS.registerPreviewTemplate('newsItem', News);
 CMS.registerPreviewTemplate('about', About);
 CMS.registerPreviewTemplate('projectCategories', Categories);
 CMS.registerPreviewTemplate('faqs', FAQs);
+CMS.registerPreviewTemplate('contact', Contact);
 
 // Register any CSS file on the home page as a preview style
 fetch('/')

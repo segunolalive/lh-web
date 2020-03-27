@@ -50,20 +50,9 @@ collections:
         delete: false
         preview_path: '/faqs'
         fields:
-          - name: faqHeadline
+          - name: headline
             label: FAQ Headline
             widget: string
-          - name: contactHeadline
-            label: Contact Headline
-            widget: string
-          - name: contactSubHead
-            label: Contact SubHead
-            widget: string
-          - name: contact
-            label: Contact Info
-            fields:
-              - { label: 'Headline', name: 'headline', widget: 'string' }
-              - { label: 'Sub Head', name: 'subHead', widget: 'string' }
           - name: faqs
             label: FAQs
             widget: list
@@ -143,6 +132,36 @@ collections:
           - label: Background
             name: background
             widget: markdown
+      - name: contact
+        label: Contact Page
+        delete: false
+        file: 'src/_data/contact.json'
+        fields:
+          - label: 'SEO Meta Title'
+            name: 'metaTitle'
+            widget: 'string'
+            required: false
+          - label: 'Social Image'
+            name: 'SEOImage'
+            widget: 'image'
+            required: false
+          - label: 'SEO Meta Description'
+            name: 'metaDesc'
+            widget: 'string'
+            required: false
+          - label: 'Contact Headline'
+            name: 'headline'
+            widget: 'string'
+          - label: 'Contact Info'
+            name: 'contactInfo'
+            widget: 'list'
+            fields:
+              - label: Contact Type (e.g Phone, email, address)
+                name: type
+                widget: string
+              - label: Value (the actual contact information)
+                name: value
+                widget: string
 
   - name: 'newsItem'
     label: 'News Articles'
