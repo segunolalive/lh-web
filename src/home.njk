@@ -1,4 +1,6 @@
-﻿--- permalink: / ---
+﻿---
+permalink: /
+---
 {% extends "base.njk" %}
 
 {% block header %}
@@ -15,49 +17,29 @@
 {% block content %}
   <section id="features" class="section-base section-color">
     <div class="container">
-      <h2 class="align-center">All the data you need, in one place.</h2>
+      <h2 class="align-center">{{home.summary[0].headline}}</h2>
       <p class="align-center width-650">
-        Lighthouse is a robust engine for revenue generation, profiling and optimization purposes
+        {{home.summary[0].subHead}}
       </p>
       <hr class="space"/>
       <div class="grid-list" data-columns="3" data-columns-md="2" data-columns-xs="1">
         <div class="grid-box">
 
+        {% set icons = ["im-laptop-3", "im-bar-chart4", "im-shuffle-4"] %}
+        {% for column in home.summary[0].columns %}
           <div class="grid-item">
             <div class="cnt-box cnt-box-top-icon boxed">
-              <i class="im-laptop-3"></i>
+              <i class="{{icons[loop.index0]}}"></i>
               <div class="caption">
-                <h2>Data: The new oil</h2>
+                <h2>{{column.headline}}</h2>
 
                 <p>
-                  Data can unlock ways of helping Nigeria plan for and respond to some of the biggest challenges facing the nation in areas such as health, social, security and indigenous affairs
+                  {{column.content}}
                 </p>
               </div>
             </div>
           </div>
-
-          <div class="grid-item">
-            <div class="cnt-box cnt-box-top-icon boxed">
-              <i class="im-bar-chart4"></i>
-              <div class="caption">
-                <h2>Profiling Engine</h2>
-                <p>
-                  A database engine for revenue generation, profiling & optimization purposes. It highlights anomalies in revenue forecast, performance & provides relevant information about revenue generating entities.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="grid-item">
-            <div class="cnt-box cnt-box-top-icon boxed">
-              <i class="im-shuffle-4"></i>
-              <div class="caption">
-                <h2>Decision making</h2>
-                <p>
-                  An Artificial Intelligence engine that provides the FMF and Revenue stakeholders (including Tax authorities) with empirical data to make informed decisions.
-                </p>
-              </div>
-            </div>
-          </div>
+        {% endfor %}
 
         </div>
       </div>
@@ -65,15 +47,15 @@
   </section>
   <section class="section-block section-block-full section-block-right">
     <div class="block-media">
-      <div class="image" data-parallax="scroll" data-bleed="0" data-image-src="media/lighthouse-datacenter.jpg"></div>
+      <div class="image" data-parallax="scroll" data-bleed="0" data-image-src="/media/{{home.callout[0].background}}"></div>
     </div>
     <div class="overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: #17452666;"></div>
     <div class="container">
       <div class="row">
         <div class="col">
-          <h2>Command Centre/Service Provision Unit.</h2>
+          <h2>{{home.callout[0].headline}}</h2>
           <p>
-            With this initiative, the Federal Ministry of Finance (FMF) provides rapid response to stakeholders thereby dramatically improving revenue collection.
+            {{home.callout[0].content}}
           </p>
         </div>
         <div class="col"></div>
@@ -86,14 +68,14 @@
       <hr class="space-lg"/>
       <div class="row">
         <div class="col-lg-6 order-md-first">
-          <h2>Project Lighthouse is a data-driven Artificial Intelligence engine.</h2>
+          <h2>{{home.extraSummary[0].headline}}</h2>
           <p>
-            It provides the Federal Ministry of Finance (FMF) with an intelligence and profiling platform to support its departments and agencies to develop a more efficient revenue assessment methodology by ensuring that major revenue loopholes are plugged, and revenue collection is dramatically improved.
+            {{home.extraSummary[0].content}}
           </p>
           <hr class="space-sm visible-md"/>
         </div>
         <div class="col-lg-6" data-anima="fade-right" data-time="1000">
-          <img class="margin-11" src="media/lighthouse-bg.png" alt=""/>
+          <img class="margin-11" src="/media/{{home.extraSummary[0].image}}" alt=""/>
         </div>
       </div>
       <br />
@@ -103,9 +85,9 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-8 col-md-8">
-          <h2>Verify your debt status with ease .</h2>
+          <h2>{{home.verify[0].headline}}</h2>
           <p>
-            Are you a registered company, contractor, consultant or service provider with the Corporate Affairs Commission(CAC)? Verify your debt status in no time.
+            {{home.verify[0].summary}}
           </p>
         </div>
         <div class="col-lg-4 col-md-4 align-right align-left-sm">
