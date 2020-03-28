@@ -1,8 +1,8 @@
 backend:
   name: git-gateway
-  branch: master
+  branch: eleventy
 publish_mode: editorial_workflow
-site_url: 'https://example.com'
+site_url: 'https://lh-web.netlify.com/'
 media_folder: 'media/uploads'
 public_folder: 'uploads'
 collections:
@@ -12,7 +12,7 @@ collections:
       - name: 'home'
         label: 'Homepage'
         delete: false
-        file: 'src/index.md'
+        file: 'src/_data/home.json'
         slug: '{{slug}}'
         create: false
         fields:
@@ -22,7 +22,6 @@ collections:
               widget: 'hidden',
               default: 'base.njk',
             }
-          - { label: 'Title', name: 'title', widget: 'string' }
           - {
               label: 'SEO Meta Title',
               name: 'metaTitle',
@@ -36,26 +35,139 @@ collections:
               required: false,
             }
           - {
-              label: 'Post Feed Heading',
-              name: 'postsHeading',
-              widget: 'string',
-              default: 'Latest posts',
-            }
-          - {
-              label: 'Archive Link Text',
-              name: 'archiveButtonText',
-              widget: 'string',
-              default: 'See all posts',
-            }
-          - {
-              label: 'Social Image',
-              name: 'socialImage',
+              label: 'SEO Image',
+              name: 'SEOImage',
               widget: 'image',
               required: false,
             }
-          - { label: 'Body', name: 'body', widget: 'markdown' }
-  - name: 'news'
-    label: 'News'
+          - { label: 'Headline', name: 'headline', widget: 'string' }
+          - { label: 'Sub Head', name: 'subHead', widget: 'string' }
+          - { label: 'Banner Image', name: 'banner', widget: 'image' }
+      - name: 'faqs'
+        label: 'FAQs'
+        file: 'src/_data/faqs.json'
+        create: false
+        delete: false
+        preview_path: '/faqs'
+        fields:
+          - name: faqHeadline
+            label: FAQ Headline
+            widget: string
+          - name: contactHeadline
+            label: Contact Headline
+            widget: string
+          - name: faqs
+            label: FAQs
+            widget: list
+            fields:
+              - { label: 'Question', name: 'question', widget: 'string' }
+              - { label: 'Answer', name: 'answer', widget: 'string' }
+      - name: 'news'
+        label: 'News Page'
+        delete: false
+        file: 'src/_data/news.json'
+        slug: '{{slug}}'
+        create: false
+        fields:
+          - {
+              label: 'Layout',
+              name: 'layout',
+              widget: 'hidden',
+              default: 'base.njk',
+            }
+          - {
+              label: 'SEO Meta Title',
+              name: 'metaTitle',
+              widget: 'string',
+              required: false,
+            }
+          - {
+              label: 'SEO Meta Description',
+              name: 'metaDesc',
+              widget: 'string',
+              required: false,
+            }
+          - {
+              label: 'Social Image',
+              name: 'SEOImage',
+              widget: 'image',
+              required: false,
+            }
+          - { label: 'Headline', name: 'headline', widget: 'string' }
+          - { label: 'Sub Head', name: 'subHead', widget: 'string' }
+          - { label: 'Banner Image', name: 'banner', widget: 'image' }
+      - name: 'about'
+        label: 'About Page'
+        delete: false
+        file: 'src/_data/about.json'
+        slug: '{{slug}}'
+        create: false
+        fields:
+          - label: 'SEO Meta Title'
+            name: 'metaTitle'
+            widget: 'string'
+            required: false
+          - label: 'Social Image'
+            name: 'SEOImage'
+            widget: 'image'
+            required: false
+          - label: 'SEO Meta Description'
+            name: 'metaDesc'
+            widget: 'string'
+            required: false
+          - label: 'Headline'
+            name: 'headline'
+            widget: 'string'
+          - label: 'Sub Head'
+            name: 'subHead'
+            widget: 'string'
+          - label: 'Banner Image'
+            name: 'banner'
+            widget: 'image'
+          - label: Row
+            name: row
+            allow_add: false
+            widget: list
+            fields:
+              - { label: 'First Column', name: 'column1', widget: 'string' }
+              - { label: 'Second Column', name: 'column2', widget: 'string' }
+              - { label: 'Image', name: 'image', widget: 'image' }
+          - label: Background
+            name: background
+            widget: markdown
+      - name: contact
+        label: Contact Page
+        delete: false
+        file: 'src/_data/contact.json'
+        fields:
+          - label: 'SEO Meta Title'
+            name: 'metaTitle'
+            widget: 'string'
+            required: false
+          - label: 'Social Image'
+            name: 'SEOImage'
+            widget: 'image'
+            required: false
+          - label: 'SEO Meta Description'
+            name: 'metaDesc'
+            widget: 'string'
+            required: false
+          - label: 'Contact Headline'
+            name: 'headline'
+            widget: 'string'
+          - label: 'Contact Info'
+            name: 'contactInfo'
+            widget: 'list'
+            fields:
+              - label: Contact Type (e.g Phone, email, address)
+                name: type
+                widget: string
+              - label: Value (the actual contact information)
+                name: value
+                widget: string
+
+  - name: 'newsItem'
+    label: 'News Articles'
     folder: 'src/news'
     create: true
     preview_path: 'news/{{slug}}'
@@ -66,7 +178,6 @@ collections:
           widget: 'hidden',
           default: 'base.njk',
         }
-      - { label: 'Title', name: 'title', widget: 'string' }
       - {
           label: 'SEO Meta Title',
           name: 'metaTitle',
@@ -80,12 +191,14 @@ collections:
           required: false,
         }
       - {
-          label: 'Social Image',
-          name: 'socialImage',
+          label: 'SEO Image',
+          name: 'SEOImage',
           widget: 'image',
           required: false,
         }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Headline', name: 'headline', widget: 'string' }
+      - { label: 'Image', name: 'image', widget: 'image' }
       - { label: 'Tags', name: 'tags', widget: 'list', allow_add: true }
       - { label: 'Body', name: 'body', widget: 'markdown' }
   - label: 'Globals'
@@ -109,3 +222,28 @@ collections:
               name: 'faviconPath',
               widget: 'string',
             }
+      - label: 'Key Stakeholders'
+        name: 'stakeholders'
+        widget: 'list'
+        file: 'src/_data/stakeholders.json'
+        fields:
+          - name: stakeholder
+            label: Stakeholder
+            widget: list
+            fields:
+              - { label: 'Institution', name: 'name', widget: 'string' }
+              - { label: 'Logo', name: 'logo', widget: 'image' }
+      - label: 'Project Categories'
+        name: 'projectCategories'
+        file: 'src/_data/projectCategories.json'
+        preview_path: 'about'
+        fields:
+          - name: title
+            label: Title
+            widget: string
+          - name: categories
+            label: Categories
+            widget: list
+            fields:
+              - { label: 'Category', name: 'category', widget: 'string' }
+              - { label: 'Short Description', name: 'description', widget: 'string' }

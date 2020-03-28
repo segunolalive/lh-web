@@ -4,14 +4,11 @@ const dateFilter = require('./src/filters/date-filter.js');
 const markdownFilter = require('./src/filters/markdown-filter.js');
 const w3DateFilter = require('./src/filters/w3-date-filter.js');
 
-const site = require('./src/_data/site.json');
-
 module.exports = function(config) {
   config.addPassthroughCopy('themekit');
   config.addPassthroughCopy('media');
   config.addPassthroughCopy('static');
-  config.addPassthroughCopy('src/admin/config.yml');
-  config.addPassthroughCopy('src/admin/utils.js');
+  config.addPassthroughCopy('src/admin');
 
   // Filters
   config.addFilter('dateFilter', dateFilter);
@@ -21,20 +18,17 @@ module.exports = function(config) {
   const now = new Date();
 
   // Custom collections
-  const livePosts = post => post.date <= now && !post.data.draft;
-  config.addCollection('posts', collection => {
+  const liveNews = article => article.date <= now && !article.data.draft;
+
+  config.addCollection('newsFeed', collection => {
     return [
-      ...collection.getFilteredByGlob('./src/posts/*.md').filter(livePosts)
+      ...collection.getFilteredByGlob('./src/news/*.md').filter(liveNews)
     ].reverse();
   });
 
-  config.addCollection('postFeed', collection => {
-    return [
-      ...collection.getFilteredByGlob('./src/posts/*.md').filter(livePosts)
-    ]
-      .reverse()
-      .slice(0, site.maxPostsPerPage);
-  });
+  config.addCollection('faqs', collection => {
+    return [...collection.getFilteredByGlob('./src/faqs/*.md')];
+  })
 
   // 404
   config.setBrowserSyncConfig({
@@ -56,6 +50,11 @@ module.exports = function(config) {
       input: 'src',
       output: 'dist'
     },
-    passthroughFileCopy: true
+    passthroughFileCopy: true,
+    pathPrefix: '/',
+    templateFormats: ['md', 'njk', 'html'],
+    markdownTemplateEngine: 'njk',
+    htmlTemplateEngine: 'njk',
+    dataTemplateEngine: 'njk'
   };
 };
