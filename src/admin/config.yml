@@ -306,7 +306,7 @@ collections:
             }
       - label: 'Key Stakeholders'
         name: 'stakeholders'
-        widget: 'list'
+        widget: 'object'
         file: 'src/_data/stakeholders.json'
         fields:
           - name: stakeholder
