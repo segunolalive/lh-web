@@ -16,25 +16,6 @@
         {% include "partials/newsFeed.njk" %}
 
         <div class="col-lg-4 widget">
-          <hr class="space visible-md"/>
-          <hr class="space-sm"/>
-          <h3>Categories</h3>
-          <hr class="space-xs"/>
-          <div class="menu-inner menu-inner-vertical">
-            <ul>
-              <li>
-                <a href="/news">
-                  Debt Recovery
-                </a>
-              </li>
-              <li>
-                <a href="/news">
-                  Revenue performance
-                </a>
-              </li>
-
-            </ul>
-          </div>
           <hr class="space-sm"/>
           <h3>Latest posts</h3>
           <hr class="space-sm"/>
@@ -67,11 +48,9 @@
           <h3>Tags</h3>
           <hr class="space-sm"/>
           <div class="list-tags">
-            <a href="/news">Debt Recovery</a>
-            <a href="/news">Revenue Performance</a>
-            <a href="/news">Economy</a>
-            <a href="/news">Data</a>
-          </div>
+          {% for tag in collections.tagList %}
+            <a href="/tags/{{tag}}">{{tag}}</a>
+          {% endfor %}
           <hr class="space-sm"/>
         </div>
       </div>

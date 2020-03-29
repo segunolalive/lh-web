@@ -1,0 +1,25 @@
+---
+permalink: /tags/
+---
+
+
+{% extends "base.njk" %}
+
+{% block content %}
+<section class="section-base">
+  <div class="container">
+    <div class="row">
+      <div class="col list-tags">
+        <hr class="space-sm"/>
+        <h1>All Tags</h1>
+
+        {% for tag in collections.tagList %}
+          <a href="/tags/{{tag}}">{{tag}}</a>
+        {% endfor %}
+        <hr class="space-sm"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

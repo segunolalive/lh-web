@@ -124,12 +124,6 @@ collections:
         create: false
         fields:
           - {
-              label: 'Layout',
-              name: 'layout',
-              widget: 'hidden',
-              default: 'base.njk',
-            }
-          - {
               label: 'SEO Meta Title',
               name: 'metaTitle',
               widget: 'string',
@@ -227,11 +221,33 @@ collections:
     preview_path: 'news/{{slug}}'
     fields:
       - {
-          label: 'Layout',
-          name: 'layout',
-          widget: 'hidden',
-          default: 'base.njk',
+          label: 'SEO Meta Title',
+          name: 'metaTitle',
+          widget: 'string',
+          required: false,
         }
+      - {
+          label: 'SEO Meta Description',
+          name: 'metaDesc',
+          widget: 'string',
+          required: false,
+        }
+      - {
+          label: 'SEO Image',
+          name: 'SEOImage',
+          widget: 'image',
+          required: false,
+        }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Headline', name: 'headline', widget: 'string' }
+      - { label: 'Image', name: 'image', widget: 'image' }
+      - { label: 'Tags', name: 'tags', widget: 'list', allow_add: true }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'post'
+    label: 'Posts'
+    folder: 'src/posts'
+    create: true
+    fields:
       - {
           label: 'SEO Meta Title',
           name: 'metaTitle',

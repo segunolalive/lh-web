@@ -28,7 +28,7 @@ const News = createClass({
                         <span>${date.toLocaleDateString()}</span>
                         <div class="icon-list"></div>
                         <div>
-                          ${body}
+                          ${this.props.widgetFor('body')}
                         </div>
                       </div>
                     </div>

@@ -5,7 +5,7 @@ const html = htm.bind(h);
 
 export default createClass({
   render() {
-    const { background, row } = this.props.entry.getIn(['data']).toJS();
+    const { row } = this.props.entry.getIn(['data']).toJS();
     return html`
       <${Banner} entry=${this.props.entry} />
       <section class="section-base section-color">
@@ -39,7 +39,7 @@ export default createClass({
               <h2>Background</h2>
             </div>
             <hr class="space" />
-            ${background}
+            ${this.props.widgetFor('background')}
             <hr class="space" />
           </div>
         </div>

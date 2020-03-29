@@ -1,4 +1,6 @@
 const fs = require('fs');
+
+const site = require('./src/_data/site.json');
 // Import filters
 const dateFilter = require('./src/filters/date-filter.js');
 const markdownFilter = require('./src/filters/markdown-filter.js');
@@ -18,17 +20,27 @@ module.exports = function(config) {
   const now = new Date();
 
   // Custom collections
-  const liveNews = article => article.date <= now && !article.data.draft;
+  const liveArticle = article => article.date <= now && !article.data.draft;
 
   config.addCollection('newsFeed', collection => {
     return [
-      ...collection.getFilteredByGlob('./src/news/*.md').filter(liveNews)
+      ...collection.getFilteredByGlob('./src/news/*.md').filter(liveArticle)
     ].reverse();
   });
 
-  config.addCollection('faqs', collection => {
-    return [...collection.getFilteredByGlob('./src/faqs/*.md')];
-  })
+  config.addCollection('postsList', collection => {
+    return [
+      ...collection.getFilteredByGlob('./src/posts/*.md').filter(liveArticle)
+    ].reverse();
+  });
+
+  config.addCollection('featuredPosts', collection => {
+    return [
+      ...collection.getFilteredByGlob('./src/posts/*.md').filter(liveArticle)
+    ].reverse().slice(0, site.maxPostsPerPage);;
+  });
+
+  config.addCollection('tagList', require('./src/_11ty/getTagList'));
 
   // 404
   config.setBrowserSyncConfig({
