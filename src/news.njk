@@ -7,7 +7,8 @@
 
 {% block content %}
 
-{% set newsFeed= collections.newsFeed %}
+  {% set newsFeed = collections.newsFeed %}
+  {% set featuredPosts = collections.featuredPosts %}
 
 
   <section class="section-base section-color">
@@ -21,39 +22,27 @@
           <hr class="space-sm"/>
           <div class="menu-inner menu-inner-vertical menu-inner-image">
             <ul>
+            {% for post in featuredPosts %}
               <li>
-                <a href="/news_item">
-                  <img src="/media/minister-of-finance.jpg" alt=""/>
-                  <span>February 12, 2020</span>
-                  2nd Project Lighthouse Steering committee meeting
+                <a href="{{post.url}}">
+                  <img src="/media/{{post.data.image}}" alt=""/>
+                  <span>{{ post.date | dateFilter }}</span>
+                  {{post.data.headline}}
                 </a>
               </li>
-              <li>
-                <a href="news_item">
-                  <img src="/media/lighthouse-image-02.jpg" alt=""/>
-                  <span>February 25, 2020</span>
-                  Six best practices for using artificial intelligence data
-                </a>
-              </li>
-              <li>
-                <a href="news_item">
-                  <img src="/media/lighthouse-image-04.jpg" alt=""/>
-                  <span>April 19, 2020</span>
-                  Machine learning and AI are raising concerns
-                </a>
-              </li>
+              {% endfor %}
             </ul>
           </div>
           <hr class="space-sm"/>
           <h3>Tags</h3>
           <hr class="space-sm"/>
           <div class="list-tags">
-          {% for tag in collections.tagList %}
-            <a href="/tags/{{tag}}">{{tag}}</a>
-          {% endfor %}
-          <hr class="space-sm"/>
+            {% for tag in collections.tagList %}
+              <a href="/tags/{{tag}}">{{tag}}</a>
+            {% endfor %}
+            <hr class="space-sm"/>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-{% endblock %}
+    </section>
+  {% endblock %}

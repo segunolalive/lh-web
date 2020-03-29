@@ -221,6 +221,12 @@ collections:
     preview_path: 'news/{{slug}}'
     fields:
       - {
+        label: Layout,
+        name: layout,
+        widget: hidden,
+        default: 'pages/article.njk'
+      }
+      - {
           label: 'SEO Meta Title',
           name: 'metaTitle',
           widget: 'string',
@@ -248,6 +254,12 @@ collections:
     folder: 'src/posts'
     create: true
     fields:
+      - {
+          label: Layout,
+          name: layout,
+          widget: hidden,
+          default: 'pages/article.njk'
+        }
       - {
           label: 'SEO Meta Title',
           name: 'metaTitle',

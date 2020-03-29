@@ -9,8 +9,8 @@
       <div class="grid-box">
         {% for item in newsFeed %}
           <div class="grid-item">
-            <div class="cnt-box cnt-box-blog-side boxed" data-href="/#">
-              <a href="/#" class="img-box">
+            <div class="cnt-box cnt-box-blog-side boxed" data-href="{{item.url}}">
+              <a href="{{item.url}}" class="img-box">
                 <div class="blog-date">
                   <span>{{item.date.toLocaleDateString('en-US', options)}}</span>
                 </div>
