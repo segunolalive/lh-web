@@ -79,6 +79,11 @@ nav.menu-classic.menu-fixed.menu-transparent.menu-one-page.align-right.light {
   background: #fff;
 }
 
+.clamp-three-lines {
+  overflow: hidden;
+  max-height: 90px;
+}
+
 p {
   text-align: justify;
   margin: 10px 0 10px 0;

@@ -20,7 +20,7 @@
                 <h2>{{ item.data.headline }}</h2>
                 <span>{{item.date.toLocaleDateString()}}</span>
                 <div class="icon-list"></div>
-                <div>
+                <div class="clamp-three-lines">
                   {{ item.templateContent | markdownFilter | safe }}
                 </div>
               </div>
