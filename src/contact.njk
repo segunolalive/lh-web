@@ -41,15 +41,15 @@
           <hr class="space visible-md"/>
           <hr class="space">
           <p>
-            Our team of seasoned professionals want to assist you.
+            {{contact.headline}}
           </p>
           <ul class="text-list text-list-line">
             {% for item in contact.contactInfo %}
-            <li>
-              <b>{{item.type}}</b>
-              <hr/>
-              <p>{{item.value}}</p>
-            </li>
+              <li>
+                <b>{{item.type}}</b>
+                <hr/>
+                <p>{{item.value}}</p>
+              </li>
             {% endfor %}
           </ul>
           <hr class="space-sm"/>
