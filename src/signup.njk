@@ -1,243 +1,246 @@
 {% extends "base.njk" %}
 
 {% block header %}
-  <header style=" position: relative" class="header-image ken-burn-center light" data-parallax="true" data-natural-height="600" data-natural-width="1920" data-bleed="0" data-image-src="/media/lighthouse-background-08.jpg" data-offset="0">
-      <div class="overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: #17452666;"></div>
-    <div class="container" style="margin-top: 0px;">
-      <h1>Verify Debt Status</h1>
-    </div>
-  </header>
+    <header style=" position: relative" class="header-image ken-burn-center light" data-parallax="true" data-natural-height="600" data-natural-width="1920" data-bleed="0" data-image-src="/media/lighthouse-background-08.jpg" data-offset="0">
+        <div class="overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: #17452666;"></div>
+        <div class="container" style="margin-top: 0px;">
+            <h1>Verify Debt Status</h1>
+        </div>
+    </header>
 {% endblock %}
 
 {% block content %}
-  <section class="section-base section-color">
-    <div class="container">
-      <div class="row">
-         <h2>Verification Guidelines .</h2>
-                    <p class="justify">As part of the Federal Government's broader effort to address the perennial revenue shortfalls experienced across the system, the Honourable Minister of Finance, Budget and National Planning (FMFBNP), Dr (Mrs) Zainab Shamsuna Ahmed on 30th September 2019 issued a finance circular for the consolidation of all list of government debtors across all Ministries, Departments and Agencies (MDAs) through Project Lighthouse Debt Recovery Functionality.  
+    <section class="section-base section-color">
+        <div class="container">
+            <div class="row">
+                <h2>Verification Guidelines .</h2>
+                <p class="justify">As part of the Federal Government's broader effort to address the perennial revenue shortfalls experienced across the system, the Honourable Minister of Finance, Budget and National Planning (FMFBNP), Dr (Mrs) Zainab Shamsuna Ahmed on 30th September 2019 issued a finance circular for the consolidation of all list of government debtors across all Ministries, Departments and Agencies (MDAs) through Project Lighthouse Debt Recovery Functionality.  
 This platform allows Companies registered with the CAC including Government vendors and Contractors to ascertain if their organization is indebted to the Government and also provide access for direct reconciliation.  
 The steps for the verification of your company's debt status is easy:</p>
-      </div>
-      <div class="row">
-          <div class="col-lg-6">
-              <div class="panel">
-                  <ul class="text-list text-list-side">
-                      <li>
-                          <h4>1</h4>
-                          <p class="justify">
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="panel">
+                        <ul class="text-list text-list-side">
+                            <li>
+                                <h4>1</h4>
+                                <p class="justify">
                               Signup to get your company registered - You would have to provide (CAC) Registration Number, (FIRS) TIN, Company's address and contact information.
                           </p>
-                      </li>
-                      <li>
-                          <h4>2</h4>
-                          <p class="justify">
+                            </li>
+                            <li>
+                                <h4>2</h4>
+                                <p class="justify">
                              Signin to the Lighthouse Debt Verification Database - Upon successful completion, your login credentials (Username and Password) is sent shortly to the unique contact email address provided. You would need to check your mail for the credential (i.e. Username and Password) .
                           </p>
-                      </li>
-                      <li>
-                          <h4>3</h4>
-                          <p class="justify>
+                            </li>
+                            <li>
+                                <h4>3</h4>
+                                <p class="justify">
                               Using your username and password, Signin to the Verification Database to see information regarding your organization debt status.
                           </p>
-                      </li>
-                      <li>
-                          <h4>4</h4>
-                          <p class="justify">
+                            </li>
+                            <li>
+                                <h4>4</h4>
+                                <p class="justify">
                               Upon verification, your company is either classified as "Indebted" or "Not available".
                           </p>
-                      </li>
-                      <li>
-                          <h4>5</h4>
-                          <p class="justify">
+                            </li>
+                            <li>
+                                <h4>5</h4>
+                                <p class="justify">
                               In the event your organization is classified as ‘'Indebted'', the details of debt owed to the government is shown alongside a virtual access for direct resolution.
                           </p>
-                      </li>
-                      <li>
-                          <h4>N.B</h4>
-                          <p>
-                              No payment is required for the verification.
+                            </li>
+                            <li>
+                                <h4>N.B</h4>
+                                <p>
+                              No payment is  for the verification.
                           </p>
-                      </li>
-                  </ul>
-              </div>
-          </div>
-          <div class="col-lg-6">
-              <div class="bg-white p-20">
-                  <center>
-                  </center>
-                  <hr class="space-sm" />
-                  <form action="#" class="form-box form-ajax" method="post">
-                  <div class="grid-list" data-columns="1" data-columns-sm="1">
-                      <div class="grid-box">
-                              <div class="grid-item">
-                                  <h2>Company Bio-Data</h2>
-                                  <br>
-                                  <div class="row">
-                                      <div class="col-lg-6">
-                                          <input id="company_name" name="company_name"
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="bg-white p-20">
+                        <center></center>
+                        <hr class="space-sm"/>
+                        <form id="createUser" class="form-ajax form-box">
+                            <div class="grid-list" data-columns="1" data-columns-sm="1">
+                                <div class="grid-box">
+                                    <div class="grid-item">
+                                        <h2>Company Bio-Data</h2>
+                                        <br>
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <input id="company_name" name="company_name"
                                               placeholder="Company Name" type="text" class="input-text"
-                                              required>
-                                      </div>
-                                      <div class="col-lg-6">
-                                          <input id="company_email" name="company_email" placeholder="Email" type="email"
-                                              class="input-text" required>
-                                      </div>
-                                  </div>
-                                  <div class="row">
-                                      <div class="col-lg-6">
-                                          <input id="company_phone" name="company_phone"
-                                          placeholder="Phone" type="number" class="input-text"
-                                          required>
-                                      </div>
-                                      <div class="col-lg-6">
-                                          <input id="company_tin" name="company_tin"
-                                          placeholder="TIN" type="number" class="input-text"
-                                          required>
-                                      </div>
-                                  </div>
-                                  <div class="row">
-                                      <div class="col-lg-12">
-                                          <input id="address_line_one" name="address_line_one" placeholder="Address Line 1"
-                                              type="text" class="input-text" required>
-                                      </div>
-                                      <div class="col-lg-12">
-                                          <input id="address_line_two" name="address_line_two" placeholder="Address Line 2"
-                                              type="text" class="input-text" required>
-                                      </div>
-                                  </div>
-                                  <div class="row">
-                                      <div class="col-lg-6">
-                                          <input id="company_city" name="company_city"
-                                      placeholder="City" type="text" class="input-text"
-                                      required>
-                                      </div>
-                                      <div class="col-lg-6">
-                                          <input id="company_state" name="company_state"
-                                      placeholder="State" type="text" class="input-text"
-                                      required>
-                                      </div>
-                                  </div>
-                                  <div class="row">
-                                      <div class="col-lg-6">
-                                          <input id="company_country" name="company_country"
-                                      placeholder="Country" type="text" class="input-text"
-                                      required>
-                                      </div>
-                                      <div class="col-lg-6">
-                                          <input id="company_rc" name="company_rc"
+                                              >
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <input id="company_rc" name="company_rc"
                                       placeholder="RC/BN" type="number" class="input-text"
-                                      required>
-                                      </div>
-                                  </div>                    
-                              </div>
-                              <div class="grid-item">
-                                  <h2>Representative Bio-Data</h2>
-                                  <br>
-                                  <div class="row">
-                                      <div class="col-lg-6">
-                                          <input id="rep_name" name="rep_name"
-                                              placeholder="Representative Name" type="text" class="input-text"
-                                              required>
-                                      </div>
-                                      <div class="col-lg-6">
-                                          <input id="rep_phone" name="rep_phone"
-                                              placeholder="Phone" type="phone" class="input-text"
-                                              required>
-                                      </div>
-                                  </div>
-                                  <div class="row">
-                                      <div class="col-lg-12">
-                                          <input id="rep_position" name="rep_position" placeholder="Current Position In Company" type="text"
-                                              class="input-text" required>
-                                      </div>
-                                  </div>
-                                  <div class="row">
-                                      <div class="col-lg-12">
-                                          <input id="address_line_one" name="address_line_one" placeholder="Address Line 1"
-                                              type="text" class="input-text" required>
-                                      </div>
-                                      <div class="col-lg-12">
-                                          <input id="address_line_two" name="address_line_two" placeholder="Address Line 2"
-                                              type="text" class="input-text" required>
-                                      </div>
-                                  </div>
-                                  <div class="row">
-                                      <div class="col-lg-6">
-                                          <input id="rep_city" name="rep_city"
-                                      placeholder="City" type="text" class="input-text"
-                                      required>
-                                      </div>
-                                      <div class="col-lg-6">
-                                          <input id="rep_state" name="rep_state"
-                                      placeholder="State" type="text" class="input-text"
-                                      required>
-                                      </div>
-                                  </div>
-                                  <div class="row">
-                                      <div class="col-lg-6">
-                                          <input id="rep_country" name="rep_country"
-                                      placeholder="Country" type="text" class="input-text"
-                                      required>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="grid-item">
-                                  <h2>Choose a password</h2>
-                                  <br>
-                                          <div class="row">
-                                          
-                                      <div class="col-lg-12">
-                                          <input id="rep_email" name="rep_email" placeholder="Representative Email" type="email"
-                                              class="input-text" required>
-                                      </div>
-                                              <div class="col-lg-6">
-                                                  <input id="password" name="password" placeholder="Password"
-                                                      type="password" class="input-text" required>
-                                              </div>
-                                              <div class="col-lg-6">
-                                                  <input id="confirm_password" name="confirm_password"
-                                                      placeholder="Confirm password" type="password"
-                                                      class="input-text" required>
-                                              </div>
-                                          </div>
+                                      >
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <input id="company_tin" name="company_tin"
+                                          placeholder="TIN" type="number" class="input-text"
+                                          >
+                                            </div>
+                                        </div>
+                                        <div class="row">
 
-                                          
-                                          <div class="row">
-                                              <div class="col-lg-6">
-                                                  <div class="form-checkbox">
-                                                      <input type="checkbox" id="check" name="check" value="check" required>
-                                                      <label for="check">You accept the terms of service and the privacy
-                                                          policy</label>
-                                                  </div>
-                                              </div>
-                                              <div class="col-lg-6">
-                                                  <button class="btn btn-sm btn-circle pull-right" type="submit">Sign up</button>
-                                              </div>
-                                              
-                                          </div>
-                                  </div>
-                          </div>
-                          <div class="list-pagination">
-                              <ul class="pagination" data-page-items="1" data-pagination-anima="fade-right"></ul>
-                          </div>
-                          <div class="row">
-                              <div class="success-box">
-                                  <div class="alert alert-success">Congratulations. Your message has been
+                                            <div class="col-lg-6">
+                                                <input id="company_phone" name="company_phone"
+                                          placeholder="Phone" type="number" class="input-text"
+                                          >
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <input id="company_email" name="company_email" placeholder="Email" type="email"
+                                              class="input-text" >
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <input id="company_address_line_one" name="address_line_one" placeholder="Address Line 1"
+                                              type="text" class="input-text" >
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <input id="company_address_line_two" name="address_line_two" placeholder="Address Line 2"
+                                              type="text" class="input-text" >
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <input id="company_city" name="company_city"
+                                      placeholder="City" type="text" class="input-text"
+                                      >
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <input id="company_state" name="company_state"
+                                      placeholder="State" type="text" class="input-text"
+                                      >
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid-item">
+                                        <h2>Representative Bio-Data</h2>
+                                        <br>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <input id="rep_name" name="rep_name"
+                                              placeholder="Representative Name" type="text" class="input-text"
+                                              >
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <input id="rep_phone" name="rep_phone"
+                                              placeholder="Phone" type="phone" class="input-text"
+                                              >
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <input id="rep_nin" name="rep_nin"
+                                      placeholder="Country" type="number" class="input-text"
+                                      >
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <input id="rep_position" name="rep_position" placeholder="Current Position In Company" type="text"
+                                              class="input-text" >
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <input id="rep_address_line_one" name="address_line_one" placeholder="Address Line 1"
+                                              type="text" class="input-text" >
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <input id="rep_address_line_two" name="address_line_two" placeholder="Address Line 2"
+                                              type="text" class="input-text" >
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <input id="rep_city" name="rep_city"
+                                      placeholder="City" type="text" class="input-text"
+                                      >
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <input id="rep_state" name="rep_state"
+                                      placeholder="State" type="text" class="input-text"
+                                      >
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid-item">
+                                        <h2>Choose a password</h2>
+                                        <br>
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <input id="rep_email" name="rep_email" placeholder="Representative Email" type="email"
+                                              class="input-text" >
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <input id="password" name="password" placeholder="Password"
+                                                      type="password" class="input-text" >
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <input id="confirm_password" name="confirm_password"
+                                                      placeholder="Confirm password" type="password"
+                                                      class="input-text" >
+                                            </div>
+                                        </div>
+<div class="row">
+                                            <div class="col-lg-12">
+                                            <label for="security_q">Security question</label>
+                                                <input id="security_q" name="security_q"
+                                      placeholder="Answer" type="text" class="input-text" value="In what year was your father born?"
+                                      >
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <input id="security_ans" name="security_ans"
+                                      placeholder="Answer" type="text" class="input-text"
+                                      >
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form-checkbox">
+                                                    <input type="checkbox" id="check" name="check" value="true" required>
+                                                    <label for="check">You accept the <a href="/terms">terms of service and the privacy
+                                                          policy</a></label>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <button class="btn btn-sm btn-circle pull-right">Sign up</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-pagination">
+                                    <ul class="pagination" data-page-items="1" data-pagination-anima="fade-right"></ul>
+                                </div>
+                                <div class="row">
+                                    <div class="success-box">
+                                        <div class="alert alert-success">Congratulations. Your message has been
                                       sent
                                       successfully</div>
-                              </div>
-                              <div class="error-box">
-                                  <div class="alert alert-warning">Error, please retry. Your message has
+                                    </div>
+                                    <div class="error-box">
+                                        <div class="alert alert-warning">Error, please retry. Your message has
                                       not been sent
                                   </div>
-                              </div>
-                          </div>
-                      </div>
-                  </form>
-              </div>
-          </div>
-      </div>
-    </div>
-  </section>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 {% endblock %}

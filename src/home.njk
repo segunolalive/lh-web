@@ -3,18 +3,43 @@ permalink: /
 ---
 {% extends "base.njk" %}
 
-{% block header %}
-  {% set header = home %}
-  {% set action = {
-    text: 'Get Started',
-    url: '/signup'
-  } %}
-  {% include "partials/banner.njk" %}
-{% endblock %}
-
-{% set newsFeed = collections.newsFeed %}
-
 {% block content %}
+  <header class="section">
+   
+      <div class="active panel">
+        <ul id="preview-slider" class="slider" data-options="arrows:true,nav:true,perView:1,autoplay:true,animationDuration: 4800,rewindDuration: 2400">
+          <li>
+            <a class="img-box" href="#">
+              <img src="media/lighthouse-background-04.jpg" class="slider-image" alt="">
+            </a>
+          </li>
+          <li>
+            <a class="img-box" href="#">
+              <img src="media/lighthouse-background-03.jpg" class="slider-image" alt="">
+            </a>
+          </li>
+          <li>
+            <a class="img-box" href="#">
+              <img src="media/lighthouse-background-04.jpg" class="slider-image" alt="">
+            </a>
+          </li>
+        </ul>
+        <div class="row align-items-center" data-anima="fade-in" data-time="1000">
+      <div class="overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: #17452666;"></div>
+      <div class="col-lg-6 slider-text">
+        <h1>
+          Project Lighthouse
+        </h1>
+        <h3>
+          Connecting the dots....
+        </h3>
+        <hr class="space">
+        <a href="/signup" class="btn btn-circle btn-sm">Verify Debt Status</a>
+        <hr class="space-lg">
+      </div>
+    </div>
+    </div>
+  </header>
   <section id="features" class="section-base section-color">
     <div class="container">
       <h2 class="align-center">{{home.summary[0].headline}}</h2>
