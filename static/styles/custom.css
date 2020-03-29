@@ -22,7 +22,7 @@
   z-index: 3;
 }
 
-.slider-text > h1, h3 {
+.slider-text > h1, .slider-text > h3 {
   color: #fff;
 }
 
