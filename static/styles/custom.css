@@ -19,6 +19,11 @@
   position: absolute;
   margin: 10px 10px 0% 10%;
   top: -400px;
+  z-index: 3;
+}
+
+.slider-text > h1, .slider-text > h3 {
+  color: #fff;
 }
 
 .p-20 {
@@ -95,14 +100,13 @@ article {
 
 blockquote {
   font-weight: 500;
-  padding: 0 0 0 50px;
+  padding: 0 0 0 30px;
   background: none;
   margin: 20px 0;
   position: relative;
   color: #1e5631;
   border-radius: 3px;
 }
-
 
 blockquote:before {
   font-size: 22px;
@@ -138,4 +142,17 @@ ul > li {
   position: relative;
   padding: 0;
   margin: 0;
+}
+
+#overlay {
+  position: absolute; 
+  width: 100%;
+  height: 600px; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #17452666;
+  z-index: 2;
+  cursor: pointer;
 }
