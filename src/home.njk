@@ -134,12 +134,12 @@ permalink: /
 
 
     <div class="row">
-      <div class="col-lg-8">
-          <div class="grid-list" data-columns="1">
+      <div class="col">
+          <div class="grid-list" data-columns="2">
             <div class="grid-box">
             {% for item in newsFeed %}
               <div class="grid-item">
-                <div class="cnt-box cnt-box-blog-side boxed">
+                <div class="cnt-box cnt-box-blog-side boxed" data-href="{{item.url}}">
                   <a href="{{item.url}}" class="img-box">
                     <img src="{{'/media/' + item.data.image}}" alt=""/>
                   </a>
