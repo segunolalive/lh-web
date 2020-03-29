@@ -1,5 +1,45 @@
 {
   "headline": "Project Lighthouse",
   "subHead": "Connecting the dots ...",
-  "banner": "uploads/lighthouse-background-01.jpg"
+  "banner": "uploads/lighthouse-background-03.jpg",
+  "summary": [
+    {
+      "headline": "All the data you need, in one place",
+      "subHead": "Lighthouse is a robust engine for revenue generation, profiling and optimization purposes",
+      "columns": [
+        {
+          "headline": "Data: The new oil",
+          "content": "Data can unlock ways of helping Nigeria plan for and respond to some of the biggest challenges facing the nation in areas such as health, social, security and indigenous affairs"
+        },
+        {
+          "content": "A database engine for revenue generation, profiling & optimization purposes. It highlights anomalies in revenue forecast, performance & provides relevant information about revenue generating entities.",
+          "headline": "Profiling Engine"
+        },
+        {
+          "headline": "Decision making",
+          "content": "An Artificial Intelligence engine that provides the FMF and Revenue stakeholders (including Tax authorities) with empirical data to make informed decisions.\n\n"
+        }
+      ]
+    }
+  ],
+  "callout": [
+    {
+      "headline": "Command Centre/Service Provision Unit",
+      "content": "With this initiative, the Federal Ministry of Finance (FMF) provides rapid response to stakeholders thereby dramatically improving revenue collection.\n\n",
+      "background": "uploads/lighthouse-datacenter.jpg"
+    }
+  ],
+  "extraSummary": [
+    {
+      "headline": "Project Lighthouse is a data-driven Artificial Intelligence engine",
+      "content": "It provides the Federal Ministry of Finance (FMF) with an intelligence and profiling platform to support its departments and agencies to develop a more efficient revenue assessment methodology by ensuring that major revenue loopholes are plugged, and revenue collection is dramatically improved.\n\n",
+      "image": "uploads/lighthouse-bg.png"
+    }
+  ],
+  "verify": [
+    {
+      "headline": "Verify your debt status with ease",
+      "summary": "Are you a registered company, contractor, consultant or service provider with the Corporate Affairs Commission(CAC)? Verify your debt status in no time."
+    }
+  ]
 }
