@@ -3,9 +3,11 @@ permalink: /
 ---
 {% extends "base.njk" %}
 
+{% set newsFeed = collections.newsFeed %}
+
 {% block content %}
   <header class="section">
-   
+
       <div class="active panel">
         <ul id="preview-slider" class="slider" data-options="arrows:true,nav:true,perView:1,autoplay:true,animationDuration: 4800,rewindDuration: 2400">
           <li>
@@ -130,71 +132,29 @@ permalink: /
       </p>
       <hr class="space"/>
 
-      <div class="row">
-        <div class="col-lg-4">
+
+
+    <div class="row">
+      <div class="col-lg-8">
           <div class="grid-list" data-columns="1">
             <div class="grid-box">
-              <div class="grid-item">
-                <div class="cnt-box cnt-box-blog-top boxed">
-                  <a href="#" class="img-box">
-                    <div class="blog-date">
-                      <span>23</span>
-                      <span>JAN 2018</span>
-                    </div>
-                    <img src="media/images/lighthouse-3.png" alt=""/>
-                  </a>
-                  <div class="p-20">
-                    <h2>
-                      Finance Minister sets up Project Lighthouse to boost revenue.
-                    </h2>
-                    <p>
-                      The Minister of Finance, Mrs Zainab Ahmed has inaugurated the Steering Committee for “Project Lighthouse” ...
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-8">
-          <div class="grid-list" data-columns="1">
-            <div class="grid-box">
+            {% for item in newsFeed %}
               <div class="grid-item">
                 <div class="cnt-box cnt-box-blog-side boxed">
-                  <a href="#" class="img-box">
-                    <div class="blog-date">
-                      <span>01</span>
-                      <span>JAN 2018</span>
-                    </div>
-                    <img src="media/images/lighthouse-4.png" alt=""/>
-                  </a>
-                  <div class="caption">
-                    <h2>Nigerian govt identifies 130,000 individuals, firms likely culpable in tax underpayment</h2>
-                    <p>
-                      The data mining efforts of the federal government, PROJECT LIGHTHOUSE through the Federal Ministry of ...
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="grid-item">
-                <div class="cnt-box cnt-box-blog-side boxed">
-                  <a href="#" class="img-box">
-                    <div class="blog-date">
-                      <span>12</span>
-                      <span>JAN 2018</span>
-                    </div>
-                    <img src="media/lighthouse-news-01.jpg" alt=""/>
+                  <a href="{{item.url}}" class="img-box">
+                    <img src="{{'/media/' + item.data.image}}" alt=""/>
                   </a>
                   <div class="caption">
                     <h2>
-                      SEC Backs FG’s Project ‘Light House’ to Boost Revenue
+                      {{item.data.headline}}
                     </h2>
-                    <p>
-                      The Securities and Exchange Commission (SEC) has pledged its cooperation with the Ministry of Finance on Project Light House ...
-                    </p>
+                    <div class="clamp-three-lines">
+                      {{ item.templateContent | markdownFilter | safe }}
+                    </div>
                   </div>
                 </div>
               </div>
+            {% endfor %}
             </div>
           </div>
         </div>
