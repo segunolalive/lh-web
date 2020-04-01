@@ -4,7 +4,7 @@ const html = htm.bind(h);
 
 const News = createClass({
   render() {
-    const { headline, image, date, body } = this.props.entry
+    const { headline, image, date, thumbnail, body } = this.props.entry
       .getIn(['data'])
       .toJS();
 
@@ -21,7 +21,7 @@ const News = createClass({
                         <div class="blog-date">
                           <span>${date.toLocaleDateString()}</span>
                         </div>
-                        <img src="/media/${image}" alt="" />
+                        <img src="/media/${thumbnail}" alt="" />
                       </a>
                       <div class="caption">
                         <h2>${headline}</h2>
